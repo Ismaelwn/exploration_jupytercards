@@ -1,0 +1,172 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Bloc d’instructions",
+                    "position": {
+                        "start": {
+                            "line": 223,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 223,
+                            "column": 1
+                        }
+                    },
+                    "key": "XcCV7ZxghM"
+                }
+            ],
+            "key": "qE5ZPxCvQG"
+        },
+        {
+            "type": "paragraph",
+            "position": {
+                "start": {
+                    "line": 225,
+                    "column": 1
+                },
+                "end": {
+                    "line": 229,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Un ",
+                    "position": {
+                        "start": {
+                            "line": 225,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 225,
+                            "column": 1
+                        }
+                    },
+                    "key": "B1G4qBs2Ln"
+                },
+                {
+                    "type": "strong",
+                    "children": [
+                        {
+                            "type": "span",
+                            "children": [],
+                            "key": "tQDpoImrrb"
+                        },
+                        {
+                            "type": "span",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "bloc d'instructions",
+                                    "label": "bloc_d-instructions",
+                                    "identifier": "bloc_d-instructions",
+                                    "html_id": "bloc-d-instructions",
+                                    "key": "JibAESux7F"
+                                }
+                            ],
+                            "indexEntries": [
+                                {
+                                    "entry": "bloc d'instructions",
+                                    "emphasis": true
+                                }
+                            ],
+                            "label": "index-g5ROJc76Rv",
+                            "identifier": "index-g5rojc76rv",
+                            "html_id": "index-g5rojc76rv",
+                            "key": "QmDZa9x7ip"
+                        }
+                    ],
+                    "key": "ppUYjUJXci"
+                },
+                {
+                    "type": "text",
+                    "value": " est une\nsuite d’une ou plusieurs instructions à exécuter successivement. Il\nest délimité par son ",
+                    "position": {
+                        "start": {
+                            "line": 225,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 225,
+                            "column": 1
+                        }
+                    },
+                    "key": "BwIUiRjUlq"
+                },
+                {
+                    "type": "strong",
+                    "position": {
+                        "start": {
+                            "line": 225,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 225,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "indentation",
+                            "position": {
+                                "start": {
+                                    "line": 225,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 225,
+                                    "column": 1
+                                }
+                            },
+                            "key": "UTJcsbP2Sg"
+                        }
+                    ],
+                    "key": "HYnMUKVzlH"
+                },
+                {
+                    "type": "text",
+                    "value": " (par convention quatre espaces de\nplus que le code environnant) ainsi que par un ‘:’ sur la ligne qui\nprécède :",
+                    "position": {
+                        "start": {
+                            "line": 225,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 225,
+                            "column": 1
+                        }
+                    },
+                    "key": "R5XJMpPZZP"
+                }
+            ],
+            "key": "L5UurS2foC"
+        },
+        {
+            "type": "code",
+            "lang": "python",
+            "value": "    ...:\n\n        instruction 1\n        instruction 2\n        ...\n        instruction n\n\n    ...",
+            "position": {
+                "start": {
+                    "line": 231,
+                    "column": 1
+                },
+                "end": {
+                    "line": 240,
+                    "column": 1
+                }
+            },
+            "key": "c7TeiXyPo3"
+        }
+    ],
+    "label": "bloc_d_instruction",
+    "identifier": "bloc_d_instruction",
+    "html_id": "bloc-d-instruction",
+    "key": "rt3xIg5WZ8"
+}

@@ -1,0 +1,76 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Exemple",
+                    "position": {
+                        "start": {
+                            "line": 29,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 29,
+                            "column": 1
+                        }
+                    },
+                    "key": "nvxZQUAHrA"
+                }
+            ],
+            "key": "NvHBR2NHYG"
+        },
+        {
+            "type": "grid",
+            "columns": [
+                1,
+                2,
+                2,
+                3
+            ],
+            "children": [
+                {
+                    "type": "card",
+                    "children": [
+                        {
+                            "type": "code",
+                            "lang": "",
+                            "value": "debut()\ndroite()\navance()\nprend()\ngauche()\navance()\npose()\ndroite()\navance()\ngauche()\navance()\navance()\ndroite()\nouvre()",
+                            "position": {
+                                "start": {
+                                    "line": 35,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 50,
+                                    "column": 1
+                                }
+                            },
+                            "key": "S9FI6p7oAd"
+                        }
+                    ],
+                    "key": "aXDTEBuXMn"
+                },
+                {
+                    "type": "card",
+                    "children": [
+                        {
+                            "type": "image",
+                            "url": "/laby0-343b268dcadb333cfde5d13ec549a058.png",
+                            "height": "20ex",
+                            "align": "center",
+                            "key": "PRNhVlgcuE",
+                            "urlSource": "media/laby0.png",
+                            "urlOptimized": "/laby0-343b268dcadb333cfde5d13ec549a058.webp"
+                        }
+                    ],
+                    "key": "fAhWhud1OQ"
+                }
+            ],
+            "key": "jjTr97j4T0"
+        }
+    ],
+    "key": "POhvRbcv8k"
+}

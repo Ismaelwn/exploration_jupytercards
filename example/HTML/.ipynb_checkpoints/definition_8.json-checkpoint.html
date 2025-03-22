@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyST AST to HTML</title>
+    <style>
+        /* === Conteneur des admonitions === */
+        .admonition {
+            border-left: 4px solid;
+            border-radius: 6px;
+            padding: 12px 16px;
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            background: #f3f6fa;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        /* === Titre de l’admonition === */
+        .admonition-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            padding: 8px 10px;
+        }
+
+        .admonition-title::before {
+            font-size: 1.2em;
+        }
+
+        /* === Contenu de l’admonition (masqué par défaut) === */
+        .admonition-content {
+            display: none;
+            padding: 10px;
+            font-weight: normal;
+        }
+
+        /* === Styles spécifiques aux types === */
+        .admonition[data-type="note"] {
+            border-left-color: #4a90e2;
+            background: #eaf3ff;
+        }
+        .admonition[data-type="note"] .admonition-title::before { content: "🔔"; color: #4a90e2; }
+
+        .admonition[data-type="tip"] {
+            border-left-color: #2e7d32;
+            background: #e3f2e1;
+        }
+        .admonition[data-type="tip"] .admonition-title::before { content: "❓"; color: #2e7d32; }
+
+        /* === Effet accordéon === */
+        .admonition-title::after {
+            content: " ▼";
+            font-size: 0.9em;
+            color: #666;
+            margin-left: auto;
+        }
+
+        .admonition.open .admonition-content {
+            display: block;
+        }
+
+        .admonition.open .admonition-title::after {
+            content: " ▲";
+        }
+    </style>
+</head>
+<body>
+
+    
+                <div class="admonition" data-type="note">
+                    <div class="admonition-title">            Instruction conditionnelle simple : «si ... alors ...»
+                    <div class="admonition" data-type="note">
+                    <div class="admonition-title">                    Syntaxe :        <pre><code data-line="254" data-column="1">if condition:
+    bloc d instructions</code></pre></div>
+                    <div class="admonition-content">                    Syntaxe :
+        <pre><code data-line="254" data-column="1">if condition:
+    bloc d instructions</code></pre></div>
+                </div>
+                    <div class="admonition" data-type="note">
+                    <div class="admonition-title">                    Sémantique        Évaluation de la condition
+        Si sa valeur est vraie, exécution du bloc d’instructions</div>
+                    <div class="admonition-content">                    Sémantique
+        Évaluation de la condition
+        Si sa valeur est vraie, exécution du bloc d’instructions</div>
+                </div></div>
+                    <div class="admonition-content">            Instruction conditionnelle simple : «si ... alors ...»
+
+                    <div class="admonition" data-type="note">
+                    <div class="admonition-title">                    Syntaxe :        <pre><code data-line="254" data-column="1">if condition:
+    bloc d instructions</code></pre></div>
+                    <div class="admonition-content">                    Syntaxe :
+        <pre><code data-line="254" data-column="1">if condition:
+    bloc d instructions</code></pre></div>
+                </div>
+
+                    <div class="admonition" data-type="note">
+                    <div class="admonition-title">                    Sémantique        Évaluation de la condition
+        Si sa valeur est vraie, exécution du bloc d’instructions</div>
+                    <div class="admonition-content">                    Sémantique
+        Évaluation de la condition
+        Si sa valeur est vraie, exécution du bloc d’instructions</div>
+                </div></div>
+                </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".admonition-title").forEach(title => {
+                title.addEventListener("click", () => {
+                    const parent = title.parentElement;
+                    parent.classList.toggle("open");
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

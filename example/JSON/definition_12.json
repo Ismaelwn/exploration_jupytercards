@@ -1,0 +1,208 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Expression",
+                    "position": {
+                        "start": {
+                            "line": 57,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 57,
+                            "column": 1
+                        }
+                    },
+                    "key": "rciDdxvsyH"
+                }
+            ],
+            "key": "gydkDRDMWS"
+        },
+        {
+            "type": "paragraph",
+            "position": {
+                "start": {
+                    "line": 58,
+                    "column": 1
+                },
+                "end": {
+                    "line": 60,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Une ",
+                    "position": {
+                        "start": {
+                            "line": 58,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 58,
+                            "column": 1
+                        }
+                    },
+                    "key": "zzCzVCBlAp"
+                },
+                {
+                    "type": "strong",
+                    "children": [
+                        {
+                            "type": "span",
+                            "children": [],
+                            "key": "EYKL2wmA2h"
+                        },
+                        {
+                            "type": "span",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "expression",
+                                    "label": "expression",
+                                    "identifier": "expression",
+                                    "html_id": "expression",
+                                    "key": "rKfNO5RLxf"
+                                }
+                            ],
+                            "indexEntries": [
+                                {
+                                    "entry": "expression",
+                                    "emphasis": true
+                                }
+                            ],
+                            "label": "index-jxFx5FCWq9",
+                            "identifier": "index-jxfx5fcwq9",
+                            "html_id": "index-jxfx5fcwq9",
+                            "key": "AUhzmnzdGf"
+                        }
+                    ],
+                    "key": "JZ9KNzGVkO"
+                },
+                {
+                    "type": "text",
+                    "value": " est une combinaison de\n",
+                    "position": {
+                        "start": {
+                            "line": 58,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 58,
+                            "column": 1
+                        }
+                    },
+                    "key": "jyka8IhtNU"
+                },
+                {
+                    "type": "strong",
+                    "children": [
+                        {
+                            "type": "span",
+                            "children": [],
+                            "key": "UfFjCImeEy"
+                        },
+                        {
+                            "type": "span",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "valeurs",
+                                    "label": "valeur",
+                                    "identifier": "valeur",
+                                    "html_id": "valeur",
+                                    "key": "FQIjvryS6B"
+                                }
+                            ],
+                            "indexEntries": [
+                                {
+                                    "entry": "valeur",
+                                    "emphasis": true
+                                }
+                            ],
+                            "label": "index-t9D5OKE4sP",
+                            "identifier": "index-t9d5oke4sp",
+                            "html_id": "index-t9d5oke4sp",
+                            "key": "KQ05DYeodI"
+                        }
+                    ],
+                    "key": "ndSEGaE6Gl"
+                },
+                {
+                    "type": "text",
+                    "value": " par des ",
+                    "position": {
+                        "start": {
+                            "line": 58,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 58,
+                            "column": 1
+                        }
+                    },
+                    "key": "h5hHuPi3oh"
+                },
+                {
+                    "type": "strong",
+                    "children": [
+                        {
+                            "type": "span",
+                            "children": [],
+                            "key": "F3efGqYNoe"
+                        },
+                        {
+                            "type": "span",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "opérations",
+                                    "label": "operation",
+                                    "identifier": "operation",
+                                    "html_id": "operation",
+                                    "key": "VdNn9bJxJY"
+                                }
+                            ],
+                            "indexEntries": [
+                                {
+                                    "entry": "opération",
+                                    "emphasis": true
+                                }
+                            ],
+                            "label": "index-U4hJiQeL9D",
+                            "identifier": "index-u4hjiqel9d",
+                            "html_id": "index-u4hjiqel9d",
+                            "key": "QDcCFhaXGW"
+                        }
+                    ],
+                    "key": "ZYh2Q4xCLZ"
+                },
+                {
+                    "type": "text",
+                    "value": " donnant une\nnouvelle valeur.",
+                    "position": {
+                        "start": {
+                            "line": 58,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 58,
+                            "column": 1
+                        }
+                    },
+                    "key": "PFyZE4yCK8"
+                }
+            ],
+            "key": "PvV0FkZy2U"
+        }
+    ],
+    "label": "valeur",
+    "identifier": "valeur",
+    "html_id": "valeur",
+    "key": "GaGIeALGlc"
+}

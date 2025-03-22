@@ -1,0 +1,3525 @@
+{
+    "kind": "Notebook",
+    "sha256": "7c55ee7e749802357fd5578ac9f920a28614804b114a6930312569f5bff06bf5",
+    "slug": "sources.boucles.boucles-for",
+    "location": "/Sources/Boucles/02-boucles-for.md",
+    "dependencies": [],
+    "frontmatter": {
+        "title": "Les boucles for",
+        "kernelspec": {
+            "name": "python3",
+            "display_name": "Python 3 (ipykernel)",
+            "language": "python"
+        },
+        "jupytext": {
+            "text_representation": {
+                "extension": ".md",
+                "format_name": "myst",
+                "format_version": "0.13"
+            }
+        },
+        "content_includes_title": false,
+        "open_access": true,
+        "license": {
+            "content": {
+                "id": "CC-BY-4.0",
+                "url": "https://creativecommons.org/licenses/by/4.0/",
+                "name": "Creative Commons Attribution 4.0 International",
+                "free": true,
+                "CC": true
+            }
+        },
+        "keywords": [],
+        "copyright": "2024-",
+        "exports": [
+            {
+                "format": "md",
+                "filename": "02-boucles-for.md",
+                "url": "/02-boucles-for-92d0d69a86d459597e4ae76ac4dfbdd6.md"
+            }
+        ]
+    },
+    "mdast": {
+        "type": "root",
+        "children": [
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 17,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 17,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "heading",
+                        "depth": 2,
+                        "position": {
+                            "start": {
+                                "line": 19,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 19,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Motivation",
+                                "position": {
+                                    "start": {
+                                        "line": 19,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 19,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "SInGV6zLrl"
+                            }
+                        ],
+                        "identifier": "motivation",
+                        "label": "Motivation",
+                        "html_id": "motivation",
+                        "implicit": true,
+                        "key": "R8hs3jc6jN"
+                    },
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 21,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 21,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Revenons sur notre programme pour compter de 1 à 5 :",
+                                "position": {
+                                    "start": {
+                                        "line": 21,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 21,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "aKlasG1I3x"
+                            }
+                        ],
+                        "key": "UofIxkSFaU"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-00148c4e9b7d3e9c",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "NLYlEAFTE7"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "n = 1\n\nwhile n <= 5:\n    print(n)\n    n = n + 1",
+                        "key": "orvquXTuOh"
+                    },
+                    {
+                        "type": "output",
+                        "id": "l21xI7wxojOAXGIyPMrYx",
+                        "data": [],
+                        "key": "EY0h7b52Uf"
+                    }
+                ],
+                "data": {},
+                "key": "mH3cUQH4dg"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 41,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 41,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 43,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 43,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Il suit un schéma classique de programme avec un ",
+                                "position": {
+                                    "start": {
+                                        "line": 43,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 43,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "o1u7A5eMeG"
+                            },
+                            {
+                                "type": "emphasis",
+                                "position": {
+                                    "start": {
+                                        "line": 43,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 43,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "compteur",
+                                        "position": {
+                                            "start": {
+                                                "line": 43,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 43,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "aT2KbMjhjZ"
+                                    }
+                                ],
+                                "key": "BYvA8lZpII"
+                            },
+                            {
+                                "type": "text",
+                                "value": " :",
+                                "position": {
+                                    "start": {
+                                        "line": 43,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 43,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "kU9LEFusXn"
+                            }
+                        ],
+                        "key": "WlOODVREAD"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-ca2ea5e1276c36a1",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    },
+                    "tags": []
+                },
+                "visibility": "show",
+                "key": "T2HJfFI0Yx"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 45,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 45,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "value": "    initialisation\n\n    while condition:\n        bloc d instructions\n        incrémentation\n    ",
+                        "position": {
+                            "start": {
+                                "line": 47,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 54,
+                                "column": 1
+                            }
+                        },
+                        "key": "ZxHDTYheW1"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-41feb7228ecac61c",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    },
+                    "tags": []
+                },
+                "visibility": "show",
+                "key": "Ho1Bzkrn5d"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 56,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 56,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 58,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 61,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 58,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 58,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "L’initialisation ",
+                                        "position": {
+                                            "start": {
+                                                "line": 58,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 58,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "MFNqQZtTMB"
+                                    },
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "n = 1",
+                                        "position": {
+                                            "start": {
+                                                "line": 58,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 58,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "EXMfuwSXpg"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " détermine à partir de quelle valeur on compte;",
+                                        "position": {
+                                            "start": {
+                                                "line": 58,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 58,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "UsRPn2HlhV"
+                                    }
+                                ],
+                                "key": "gvdD1NZ0T5"
+                            },
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 59,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 59,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "L’incrémentation ",
+                                        "position": {
+                                            "start": {
+                                                "line": 59,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 59,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "qxsXviqVEV"
+                                    },
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "n = n + 1",
+                                        "position": {
+                                            "start": {
+                                                "line": 59,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 59,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "dpMcHHmmvw"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " détermine par pas de combien on compte;",
+                                        "position": {
+                                            "start": {
+                                                "line": 59,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 59,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "jeRUtCGogr"
+                                    }
+                                ],
+                                "key": "Oauhb1Qsad"
+                            },
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 60,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 61,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "La condition ",
+                                        "position": {
+                                            "start": {
+                                                "line": 60,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 60,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "FeMfJya2I9"
+                                    },
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "n <= 5",
+                                        "position": {
+                                            "start": {
+                                                "line": 60,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 60,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "U9GZbhOPVw"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " détermine jusqu’à quelle valeur on compte.",
+                                        "position": {
+                                            "start": {
+                                                "line": 60,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 60,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "CFqRMVjODT"
+                                    }
+                                ],
+                                "key": "CQ5oACuVsF"
+                            }
+                        ],
+                        "key": "RVnFzkPJOk"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-faff83239289c94f",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    },
+                    "tags": []
+                },
+                "visibility": "show",
+                "key": "JcaJAa9VNd"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 62,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 62,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 64,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 64,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "strong",
+                                "position": {
+                                    "start": {
+                                        "line": 64,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 64,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Problème :",
+                                        "position": {
+                                            "start": {
+                                                "line": 64,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 64,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "O0KZq2qShg"
+                                    }
+                                ],
+                                "key": "wew6eqnISa"
+                            }
+                        ],
+                        "key": "XP0RDBgH06"
+                    },
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 66,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 69,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "La gestion du compteur est dispersée : le lecteur doit chercher à\ntrois endroits pour avoir toutes les informations sur le\ncompteur. L’incrémentation notamment se retrouve loin si le bloc\nd’instructions est long.",
+                                "position": {
+                                    "start": {
+                                        "line": 66,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 66,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "otjixMju24"
+                            }
+                        ],
+                        "key": "SX5Qnqt0oh"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-b1aa22606a8d00dd",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "bXPFDCrXcC"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 71,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 71,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 73,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 75,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Pour pallier cela, la plupart des langages de programmation\nintroduisent la boucle ",
+                                "position": {
+                                    "start": {
+                                        "line": 73,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 73,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "qSVSjJyGkh"
+                            },
+                            {
+                                "type": "inlineCode",
+                                "value": "for",
+                                "position": {
+                                    "start": {
+                                        "line": 73,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 73,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "VSnzHbgLxD"
+                            },
+                            {
+                                "type": "text",
+                                "value": " : «pour ... de ... à ... faire\n...». Voici comment cela s’écrit en Python sur notre exemple :",
+                                "position": {
+                                    "start": {
+                                        "line": 73,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 73,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "mcw5ZSRQQQ"
+                            }
+                        ],
+                        "key": "tCQAZr6stP"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-01c95bdba83ff399",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "ZjuWkJH6L1"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "for i in range(1, 6):\n    print(i)",
+                        "key": "mKEkooQxht"
+                    },
+                    {
+                        "type": "output",
+                        "id": "P8_F9rg1vbRL-pMJJ7MH1",
+                        "data": [],
+                        "key": "JRrQsolD3Q"
+                    }
+                ],
+                "data": {},
+                "key": "tKCHT1hNHP"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 91,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 91,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "comment",
+                        "value": "On dit que l’on réalise une *itération* de la boucle à chaque fois que le corps de la boucle est exécuté.",
+                        "position": {
+                            "start": {
+                                "line": 93,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 93,
+                                "column": 1
+                            }
+                        },
+                        "key": "sMlIn1vHGV"
+                    },
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 95,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 95,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Litéralement cela se traduit par : « pour ",
+                                "position": {
+                                    "start": {
+                                        "line": 95,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 95,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "WeDV0qlvJd"
+                            },
+                            {
+                                "type": "inlineCode",
+                                "value": "i",
+                                "position": {
+                                    "start": {
+                                        "line": 95,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 95,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "fbQKYGnAJd"
+                            },
+                            {
+                                "type": "text",
+                                "value": " dans la séquence de 1 à 6 exclu, afficher i ».",
+                                "position": {
+                                    "start": {
+                                        "line": 95,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 95,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "AEfesSduEu"
+                            }
+                        ],
+                        "key": "miYZ82tWvP"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-4228644e875bce94",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "GDZgGhwmoh"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 97,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 97,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "heading",
+                        "depth": 2,
+                        "position": {
+                            "start": {
+                                "line": 99,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 99,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "La fontion range()",
+                                "position": {
+                                    "start": {
+                                        "line": 99,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 99,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "TDqQNzPeAV"
+                            }
+                        ],
+                        "identifier": "la-fontion-range",
+                        "label": "La fontion range()",
+                        "html_id": "la-fontion-range",
+                        "implicit": true,
+                        "key": "D15Rt7ulKd"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-d23a2966924931b7",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "nWqjHLndXw"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 101,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 101,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "admonition",
+                        "children": [
+                            {
+                                "type": "admonitionTitle",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Définition : La fonction range()",
+                                        "position": {
+                                            "start": {
+                                                "line": 104,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 104,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "A8KAGJbkDt"
+                                    }
+                                ],
+                                "key": "gZFaH8ZqKf"
+                            },
+                            {
+                                "type": "paragraph",
+                                "position": {
+                                    "start": {
+                                        "line": 106,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 106,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "La fonction ",
+                                        "position": {
+                                            "start": {
+                                                "line": 106,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 106,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "ECfF1WpQlV"
+                                    },
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "range",
+                                        "position": {
+                                            "start": {
+                                                "line": 106,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 106,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "E7Tw051JCa"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " renvoie une séquence d’entiers. Elle est souvent utilisée dans les boucles pour répéter une action un certain nombre de fois. Elle peut-être utilisée sous trois formes :",
+                                        "position": {
+                                            "start": {
+                                                "line": 106,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 106,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "zN7uyqsayH"
+                                    }
+                                ],
+                                "key": "qekAyTn44D"
+                            },
+                            {
+                                "type": "list",
+                                "ordered": false,
+                                "spread": false,
+                                "position": {
+                                    "start": {
+                                        "line": 108,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 110,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "listItem",
+                                        "spread": true,
+                                        "position": {
+                                            "start": {
+                                                "line": 108,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 108,
+                                                "column": 1
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "range(fin)",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "ArxvKlY46s"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " : génère une séquence d’entiers de ",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "vpezH2jUBm"
+                                            },
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "0",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "R1Bdyp7znT"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " à ",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "gm2i0oqY2e"
+                                            },
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "fin",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "XEYgG3A68T"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " exclu.",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 108,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "TFKLbgVmI2"
+                                            }
+                                        ],
+                                        "key": "SbRKAgi7RX"
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": true,
+                                        "position": {
+                                            "start": {
+                                                "line": 109,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 109,
+                                                "column": 1
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "range(début, fin)",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "TNxrruhuOo"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " : génère une séquence d’entiers de ",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "grOxoc9knU"
+                                            },
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "début",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "J8ptiVXqtK"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " à ",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "el8U8aPa1p"
+                                            },
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "fin",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "yISA4n04tQ"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " exclu.",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 109,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "BCToZJ8IxM"
+                                            }
+                                        ],
+                                        "key": "FzWqQEOd1B"
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "spread": true,
+                                        "position": {
+                                            "start": {
+                                                "line": 110,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 110,
+                                                "column": 1
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "range(début, fin, pas)",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "ACVwdpuT6c"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " : génère une séquence d’entiers de ",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "WnNevr7nGp"
+                                            },
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "début",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "re6bOQihSF"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " à ",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "o9WXHDnKje"
+                                            },
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "fin",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "dwtHgmf9RH"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " exclu, par pas de ",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "MKkrxZkfXv"
+                                            },
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "pas",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "p4F4XROmsz"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": ".",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 110,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "XpJnal3eMF"
+                                            }
+                                        ],
+                                        "key": "KWwSobuosn"
+                                    }
+                                ],
+                                "key": "UWsQpl1aUb"
+                            }
+                        ],
+                        "label": "range",
+                        "identifier": "range",
+                        "html_id": "range",
+                        "key": "nYgkwkpOAx"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-3d9373aa13305e9d",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    },
+                    "tags": []
+                },
+                "visibility": "show",
+                "key": "OCUJBzx0uG"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 115,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 115,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 117,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 118,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 117,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 118,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Affiche les nombres de 0 à 4 :",
+                                        "position": {
+                                            "start": {
+                                                "line": 117,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 117,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "B6VGUSYmGb"
+                                    }
+                                ],
+                                "key": "ntwxzL5BEr"
+                            }
+                        ],
+                        "key": "wjzLiKkIf6"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-88909b14d02ef1d4",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    },
+                    "tags": []
+                },
+                "visibility": "show",
+                "key": "byOIgsn4bs"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "for i in range(5):\n    print(i)",
+                        "visibility": "show",
+                        "key": "xeMn4rvcFS"
+                    },
+                    {
+                        "type": "output",
+                        "id": "54Q8oCXl3PNgK1Ppyr_sc",
+                        "data": [],
+                        "visibility": "show",
+                        "key": "BPYGizR27c"
+                    }
+                ],
+                "data": {},
+                "key": "ZhDHOHnNxN"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 133,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 133,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 135,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 136,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 135,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 136,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Affiche les nombres de 1 à 5 :",
+                                        "position": {
+                                            "start": {
+                                                "line": 135,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 135,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "YhWzSKqA3n"
+                                    }
+                                ],
+                                "key": "SxnZkqHSDy"
+                            }
+                        ],
+                        "key": "Axr8t3e957"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-5356b861efa0aa08",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "UptZcY2ihI"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "for i in range(1, 6):\n    print(i)",
+                        "key": "GhfGuTgI3H"
+                    },
+                    {
+                        "type": "output",
+                        "id": "cuD3Wg4iSaek1lyLAdqbF",
+                        "data": [],
+                        "key": "VmOSVgrp0z"
+                    }
+                ],
+                "data": {},
+                "key": "MJ7m77cFn9"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 151,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 151,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 153,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 154,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 153,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 154,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Affiche les nombres impairs (par pas de 2) entre 1 et 9 :",
+                                        "position": {
+                                            "start": {
+                                                "line": 153,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 153,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "Uk637gn2gZ"
+                                    }
+                                ],
+                                "key": "uJxEtsLI3Q"
+                            }
+                        ],
+                        "key": "gVTUW7cZ9p"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-1ff8084bf8d706fe",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "pgCHulgMXJ"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "for i in range(1, 10, 2):\n    print(i)",
+                        "key": "bCBjAUP5aE"
+                    },
+                    {
+                        "type": "output",
+                        "id": "8p4BXaZCHacfjn_Dqp4Fr",
+                        "data": [],
+                        "key": "fGJyLuTZUh"
+                    }
+                ],
+                "data": {},
+                "key": "I2bi1W672E"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 169,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 169,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 171,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 172,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 171,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 172,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Le pas peut également être négatif :",
+                                        "position": {
+                                            "start": {
+                                                "line": 171,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 171,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "cqpsM2aAnc"
+                                    }
+                                ],
+                                "key": "zAqZUQC6Ns"
+                            }
+                        ],
+                        "key": "S5VDFOweLE"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-197b11fe06ce5742",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "Uecwmk1bzW"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "for i in range(5, 0, -1):\n    print(i)",
+                        "key": "tKUsNdz56l"
+                    },
+                    {
+                        "type": "output",
+                        "id": "cv8UVuT-VkYOyyTUAAPCk",
+                        "data": [],
+                        "key": "Tp8XrkDbST"
+                    }
+                ],
+                "data": {},
+                "key": "cXbXMpscvq"
+            },
+            {
+                "type": "block",
+                "children": [
+                    {
+                        "type": "admonition",
+                        "children": [
+                            {
+                                "type": "admonitionTitle",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Définition : boucle for",
+                                        "position": {
+                                            "start": {
+                                                "line": 188,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 188,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "Pv4ur2LECv"
+                                    }
+                                ],
+                                "key": "Ha7BGJByUh"
+                            },
+                            {
+                                "type": "admonition",
+                                "children": [
+                                    {
+                                        "type": "admonitionTitle",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Syntaxe :",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 190,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 190,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "ERHA5MCAAR"
+                                            }
+                                        ],
+                                        "key": "iUOsoFL3Is"
+                                    },
+                                    {
+                                        "type": "code",
+                                        "lang": "python",
+                                        "value": "for i in range(début, fin, pas):\n    # bloc d'instructions",
+                                        "position": {
+                                            "start": {
+                                                "line": 192,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 195,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "vC5lRhuYs1"
+                                    }
+                                ],
+                                "key": "dr2jQ9Gqf1"
+                            },
+                            {
+                                "type": "admonition",
+                                "children": [
+                                    {
+                                        "type": "admonitionTitle",
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Sémantique",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 198,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 198,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "FCTr0IRy0G"
+                                            }
+                                        ],
+                                        "key": "nXnjNFlTsJ"
+                                    },
+                                    {
+                                        "type": "list",
+                                        "ordered": true,
+                                        "start": 1,
+                                        "spread": false,
+                                        "position": {
+                                            "start": {
+                                                "line": 200,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 203,
+                                                "column": 1
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "type": "listItem",
+                                                "spread": true,
+                                                "position": {
+                                                    "start": {
+                                                        "line": 200,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 200,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Initialisation : au début de la boucle, Python extrait la première valeur donnée par ",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "key": "LjDxA1Kz4N"
+                                                    },
+                                                    {
+                                                        "type": "inlineMath",
+                                                        "value": "range()",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mi>a</mi><mi>n</mi><mi>g</mi><mi>e</mi><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">range()</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">an</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mopen\">(</span><span class=\"mclose\">)</span></span></span></span>",
+                                                        "key": "UEITiVQex6"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "value": ", et elle est placée dans la variable temporaire ",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "key": "D5tpRm0RQX"
+                                                    },
+                                                    {
+                                                        "type": "inlineMath",
+                                                        "value": "i",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">i</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6595em;\"></span><span class=\"mord mathnormal\">i</span></span></span></span>",
+                                                        "key": "vPojMcE3ah"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "value": ".",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 200,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "key": "ZVHp3FlJkX"
+                                                    }
+                                                ],
+                                                "key": "scGxi5GiuH"
+                                            },
+                                            {
+                                                "type": "listItem",
+                                                "spread": true,
+                                                "position": {
+                                                    "start": {
+                                                        "line": 201,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 201,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Bloc d’instructions : le bloc sous la boucle est exécuté.",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 201,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 201,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "key": "s1mcen21Iw"
+                                                    }
+                                                ],
+                                                "key": "sqq2GXeX4h"
+                                            },
+                                            {
+                                                "type": "listItem",
+                                                "spread": true,
+                                                "position": {
+                                                    "start": {
+                                                        "line": 202,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 202,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Itération : Python extrait le prochain élément donné par ",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "key": "q67e1HjtXB"
+                                                    },
+                                                    {
+                                                        "type": "inlineMath",
+                                                        "value": "range()",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mi>a</mi><mi>n</mi><mi>g</mi><mi>e</mi><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">range()</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">an</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mopen\">(</span><span class=\"mclose\">)</span></span></span></span>",
+                                                        "key": "i2CTlKbsyV"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "value": " et affecte sa valeur à la variable ",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "key": "jPZCCL3a4T"
+                                                    },
+                                                    {
+                                                        "type": "inlineMath",
+                                                        "value": "i",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">i</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6595em;\"></span><span class=\"mord mathnormal\">i</span></span></span></span>",
+                                                        "key": "rbXttpKOme"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "value": ".",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 202,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "key": "q8U0LlBTIb"
+                                                    }
+                                                ],
+                                                "key": "WL5FjCRMdZ"
+                                            },
+                                            {
+                                                "type": "listItem",
+                                                "spread": true,
+                                                "position": {
+                                                    "start": {
+                                                        "line": 203,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 203,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "text",
+                                                        "value": "Fin de boucle : La boucle se termine lorsque toutes les valeurs ont été parcourues.",
+                                                        "position": {
+                                                            "start": {
+                                                                "line": 203,
+                                                                "column": 1
+                                                            },
+                                                            "end": {
+                                                                "line": 203,
+                                                                "column": 1
+                                                            }
+                                                        },
+                                                        "key": "BviB3tianQ"
+                                                    }
+                                                ],
+                                                "key": "V11QikMCAL"
+                                            }
+                                        ],
+                                        "key": "VcOpTZNab6"
+                                    }
+                                ],
+                                "key": "vz9ifYW6su"
+                            }
+                        ],
+                        "label": "boucles_for",
+                        "identifier": "boucles_for",
+                        "html_id": "boucles-for",
+                        "key": "f97g6YHe4B"
+                    },
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 210,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 210,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Dans les exemples précédents, nous avons utilisé ",
+                                "position": {
+                                    "start": {
+                                        "line": 210,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 210,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "s8m6fT0ZGX"
+                            },
+                            {
+                                "type": "inlineMath",
+                                "value": "range()",
+                                "position": {
+                                    "start": {
+                                        "line": 210,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 210,
+                                        "column": 1
+                                    }
+                                },
+                                "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mi>a</mi><mi>n</mi><mi>g</mi><mi>e</mi><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">range()</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">an</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mopen\">(</span><span class=\"mclose\">)</span></span></span></span>",
+                                "key": "dS4xRKFpXu"
+                            },
+                            {
+                                "type": "text",
+                                "value": ", qui génère une séquence d’entiers : la boucle ",
+                                "position": {
+                                    "start": {
+                                        "line": 210,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 210,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "xekmpXN7MJ"
+                            },
+                            {
+                                "type": "inlineMath",
+                                "value": "for",
+                                "position": {
+                                    "start": {
+                                        "line": 210,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 210,
+                                        "column": 1
+                                    }
+                                },
+                                "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>o</mi><mi>r</mi></mrow><annotation encoding=\"application/x-tex\">for</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">or</span></span></span></span>",
+                                "key": "yIC7AyAX1z"
+                            },
+                            {
+                                "type": "text",
+                                "value": " fonctionne aussi en itérant sur d’autres types de données telles que les listes ; nous y reviendrons plus tard dans le cours.",
+                                "position": {
+                                    "start": {
+                                        "line": 210,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 210,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "B5mvLgaC0h"
+                            }
+                        ],
+                        "key": "nXMR6CAY1I"
+                    }
+                ],
+                "key": "fT4g6WZgUX"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 212,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 212,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "heading",
+                        "depth": 2,
+                        "position": {
+                            "start": {
+                                "line": 214,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 214,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Exercice : comptons!",
+                                "position": {
+                                    "start": {
+                                        "line": 214,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 214,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "pbV84laGhg"
+                            }
+                        ],
+                        "identifier": "exercice-comptons",
+                        "label": "Exercice : comptons!",
+                        "html_id": "exercice-comptons",
+                        "implicit": true,
+                        "key": "At0hojxfSY"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-013e3488802326ac",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false
+                    }
+                },
+                "key": "Hvo4bSenhr"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 216,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 216,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 218,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 227,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 218,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 227,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "paragraph",
+                                        "position": {
+                                            "start": {
+                                                "line": 218,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 220,
+                                                "column": 1
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "type": "text",
+                                                "value": "Copiez l’instruction ",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 218,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 218,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "Aejs9Jg43P"
+                                            },
+                                            {
+                                                "type": "inlineCode",
+                                                "value": "for",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 218,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 218,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "nsnTfHJtir"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "value": " ci-dessous dans la cellule suivante, et\nremplacez les trois “?” par les valeurs appropriées pour afficher\nles entiers pairs entre 0 et 20 (0,2,4,...,20) :",
+                                                "position": {
+                                                    "start": {
+                                                        "line": 218,
+                                                        "column": 1
+                                                    },
+                                                    "end": {
+                                                        "line": 218,
+                                                        "column": 1
+                                                    }
+                                                },
+                                                "key": "hd9taej8Vo"
+                                            }
+                                        ],
+                                        "key": "kaw1OCikLj"
+                                    },
+                                    {
+                                        "type": "code",
+                                        "lang": "",
+                                        "value": "  for i in range(?, ?, ? ):\n      print(i)\n  ",
+                                        "position": {
+                                            "start": {
+                                                "line": 222,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 226,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "LxeGLlaeBE"
+                                    }
+                                ],
+                                "key": "wAcaNxoMSO"
+                            }
+                        ],
+                        "key": "GIs1sm8ZJf"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-64e23e96bac664e7",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "vf89MWTgvF"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "### BEGIN SOLUTION\nfor i in range(0, 21, 2):\n    print(i)\n### END SOLUTION",
+                        "key": "hFJ0q8keEj"
+                    },
+                    {
+                        "type": "output",
+                        "id": "Dmu2suM_D_jTmwn4RLCdM",
+                        "data": [],
+                        "key": "hKoJWHAX8D"
+                    }
+                ],
+                "data": {},
+                "key": "cX5IOv1FGc"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 245,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 245,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 247,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 249,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 247,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 249,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Écrivez des boucles ",
+                                        "position": {
+                                            "start": {
+                                                "line": 247,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 247,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "jrSlky2SUo"
+                                    },
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "for",
+                                        "position": {
+                                            "start": {
+                                                "line": 247,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 247,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "z5xsGj9Lrb"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " qui affichent les nombres suivants dans\nl’ordre donné :",
+                                        "position": {
+                                            "start": {
+                                                "line": 247,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 247,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "n757VrKo83"
+                                    }
+                                ],
+                                "key": "DYMBrPV0RC"
+                            }
+                        ],
+                        "key": "rCHcioQHso"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-8f27451dcf8a9962",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "a7tamGpWsU"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 250,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 250,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 252,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 252,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "inlineCode",
+                                "value": "0, 3, 6, 9, 12",
+                                "position": {
+                                    "start": {
+                                        "line": 252,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 252,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "DQqmtRPBfP"
+                            },
+                            {
+                                "type": "text",
+                                "value": " :",
+                                "position": {
+                                    "start": {
+                                        "line": 252,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 252,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "xHnx6qHYGu"
+                            }
+                        ],
+                        "key": "Xs7nNDiNkK"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-dc66ba064648240a",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "ZObulATlRl"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "### BEGIN SOLUTION\nfor i in range(0, 13, 3):\n    print(i)\n### END SOLUTION",
+                        "key": "j0j5LYBTHl"
+                    },
+                    {
+                        "type": "output",
+                        "id": "9akyc3D57ra-oXG3uHzp2",
+                        "data": [],
+                        "key": "yySX8ZlHMI"
+                    }
+                ],
+                "data": {},
+                "key": "hr7cnrNRfd"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 271,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 271,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 273,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 273,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "inlineCode",
+                                "value": "20, 21, 22, 23, 24, 25",
+                                "position": {
+                                    "start": {
+                                        "line": 273,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 273,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "WDIU0r9kxu"
+                            },
+                            {
+                                "type": "text",
+                                "value": " :",
+                                "position": {
+                                    "start": {
+                                        "line": 273,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 273,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "RqUFTtmsB3"
+                            }
+                        ],
+                        "key": "Co9GN6BDpZ"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-d467a5322af6c861",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "WiWCut5VLk"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "### BEGIN SOLUTION\nfor i in range(20, 26): \n    print(i)\n### END SOLUTION",
+                        "key": "Uhp1Rumuu8"
+                    },
+                    {
+                        "type": "output",
+                        "id": "LBWTRIkJZzBEiBNDcbnr6",
+                        "data": [],
+                        "key": "L5dt3rWpYS"
+                    }
+                ],
+                "data": {},
+                "key": "zV6PKi5op2"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 292,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 292,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 294,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 294,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "inlineCode",
+                                "value": "10, 9, 8, 7, 6, 5, 4, 3, 2, 1",
+                                "position": {
+                                    "start": {
+                                        "line": 294,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 294,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "WAWv2b3ggn"
+                            },
+                            {
+                                "type": "text",
+                                "value": " :",
+                                "position": {
+                                    "start": {
+                                        "line": 294,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 294,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "qXvpHRQoBd"
+                            }
+                        ],
+                        "key": "EkfsvlO30H"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-27a6a431fe02596d",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "zn6nsmik9b"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "### BEGIN SOLUTION\nfor i in range(10, 0, -1):\n    print(i)\n### END SOLUTION",
+                        "key": "AT6iLOsQN2"
+                    },
+                    {
+                        "type": "output",
+                        "id": "bgxxFx7mUr0cHP13OPycl",
+                        "data": [],
+                        "key": "YXbck3NRwc"
+                    }
+                ],
+                "data": {},
+                "key": "VA6CWJ7zxU"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 313,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 313,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "heading",
+                        "depth": 2,
+                        "position": {
+                            "start": {
+                                "line": 315,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 315,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Utilisation de la boucle for dans Laby",
+                                "position": {
+                                    "start": {
+                                        "line": 315,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 315,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "MRekhjqyB1"
+                            }
+                        ],
+                        "identifier": "utilisation-de-la-boucle-for-dans-laby",
+                        "label": "Utilisation de la boucle for dans Laby",
+                        "html_id": "utilisation-de-la-boucle-for-dans-laby",
+                        "implicit": true,
+                        "key": "ACxoQcApaJ"
+                    },
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 317,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 319,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 317,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 319,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Relevez le défi Laby ci-dessous si vous ne l’avez pas encore fait en\nSemaine 1 :",
+                                        "position": {
+                                            "start": {
+                                                "line": 317,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 317,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "XtuheQtGbv"
+                                    }
+                                ],
+                                "key": "QfNsedFzIO"
+                            }
+                        ],
+                        "key": "ZGWwQ47dHc"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-1fe179818c6002ac",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    },
+                    "tags": []
+                },
+                "visibility": "show",
+                "key": "StgUGNO3l8"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "from laby.global_fr import *\nLaby(\"counting-the-rocks\")",
+                        "visibility": "show",
+                        "key": "CscGiFtQwz"
+                    },
+                    {
+                        "type": "output",
+                        "id": "WiKr4Y-7MoEu7ltE6HqFi",
+                        "data": [],
+                        "visibility": "show",
+                        "key": "JJjfjoxJao"
+                    }
+                ],
+                "data": {},
+                "key": "yatlhF2jrA"
+            },
+            {
+                "type": "block",
+                "children": [],
+                "key": "y9Gs3MY3nK"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "### BEGIN SOLUTION\n# Prend le caillou qui est devant et le pose derrière\ndef deplace_caillou_derriere():\n    prend()\n    avance()\n    gauche() \n    gauche()\n    pose()\n    gauche()\n    gauche()\n### END SOLUTION",
+                        "key": "VBU0B1TYAw"
+                    },
+                    {
+                        "type": "output",
+                        "id": "qpvPFFxH7FzKwC3IR8Jpt",
+                        "data": [],
+                        "key": "nAhAZiqK1O"
+                    }
+                ],
+                "data": {},
+                "key": "snw378yPGe"
+            },
+            {
+                "type": "block",
+                "children": [],
+                "key": "pEf05KRIvu"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "debut()\n### BEGIN SOLUTION\navance()\n# Avance et pose les cailloux derrière (7 fois)\nfor i in range(0, 7):\n\tdeplace_caillou_derriere()\n\n# Tourne à gauche puis avance (2 fois)\nfor i in range(0,2):\n    gauche()\n    avance() \n    avance()\n\n# Tourne à droite puis avance à travers les cailloux (4 fois)\ndroite()\nfor i in range(0,4):\n\tdeplace_caillou_derriere()\n\n# Tourne à droite puis avance à travers les cailloux (5 fois)\ndroite()\navance()\nfor i in range(0,5):\n\tdeplace_caillou_derriere()\n\ngauche()\navance() \navance()\nouvre()\n### END SOLUTION",
+                        "key": "yWFMAvqUtF"
+                    },
+                    {
+                        "type": "output",
+                        "id": "Fyxr0xZMAbDp7rCUauiXs",
+                        "data": [],
+                        "key": "P05NpwpanJ"
+                    }
+                ],
+                "data": {},
+                "key": "Cvf4yPy3Vv"
+            },
+            {
+                "type": "block",
+                "children": [],
+                "key": "TVrtpRzwZh"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "assert est_gagnant()",
+                        "key": "sunjxvRPVx"
+                    },
+                    {
+                        "type": "output",
+                        "id": "BjcOpCrMeAd8tKC0bk3Df",
+                        "data": [],
+                        "key": "JeP6kmEfr6"
+                    }
+                ],
+                "data": {},
+                "key": "BCX2HuQ9ii"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 415,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 415,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 417,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 421,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 417,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 421,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "♣ Écrivez une fonction ",
+                                        "position": {
+                                            "start": {
+                                                "line": 417,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 417,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "ZHpxQGYjbI"
+                                    },
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "carre(L)",
+                                        "position": {
+                                            "start": {
+                                                "line": 417,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 417,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "vRwRQjKIG9"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " qui prend en paramètre un\nentier L, et qui fait faire à la fourmi une trajectoire carrée de\ncôté L cases. La fourmi doit revenir à la case de départ à la fin\nde la fonction.",
+                                        "position": {
+                                            "start": {
+                                                "line": 417,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 417,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "i7hBkh3ZIN"
+                                    }
+                                ],
+                                "key": "LB43tN0gVH"
+                            }
+                        ],
+                        "key": "WvaqZ5yGCH"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-b8eccfc070bc00e9",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "RVEeaoVD4U"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "Laby(carte=\n\"o o o o o o o o o o o o\\n\"\n\"o . . . . . . . . . . o\\n\"\n\"o . . . . . . . . . . o\\n\"\n\"o . . . . . . . . . . o\\n\"\n\"o . . . . . . . . . . o\\n\"\n\"o . . . . . . . . . . o\\n\"\n\"o . . . . . . . . . . o\\n\"\n\"o . . . . . . . . . . o\\n\"\n\"o . . . . . . . . . . o\\n\"\n\"o . . . . . . . . . . o\\n\"\n\"o ↑ . . . . . . . . . o\\n\"\n\"o o o o o o o o o o o o\\n\"\n)",
+                        "key": "GmtDmBVVdM"
+                    },
+                    {
+                        "type": "output",
+                        "id": "gADfSVx0Ahe-C1oRmErXZ",
+                        "data": [],
+                        "key": "KDmyRVHL4J"
+                    }
+                ],
+                "data": {},
+                "key": "LSvHZRIPFn"
+            },
+            {
+                "type": "block",
+                "children": [],
+                "key": "etP5ADq8M8"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "# Entrée : un entier L, correspondant à la longeur d'un côté de la trajectoire.\n# Sortie : aucune, déplace la fourmi selon un carré de longueur L\n### BEGIN SOLUTION\ndef carre(L) :\n    if (L > 0):\n        for i in range(4):\n            for j in range(L-1):\n                avance()\n            droite()\n### END SOLUTION",
+                        "key": "Zw2PwtOEVC"
+                    },
+                    {
+                        "type": "output",
+                        "id": "q_e2xU6gHSe1eR4hdeHMn",
+                        "data": [],
+                        "key": "yfdFKlyHmD"
+                    }
+                ],
+                "data": {},
+                "key": "vEvYQUJC1K"
+            },
+            {
+                "type": "block",
+                "children": [],
+                "key": "FnXTpQGQ5D"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "debut()\ncarre(0)  # La fourmi ne fait rien",
+                        "key": "qdKGgqqpyK"
+                    },
+                    {
+                        "type": "output",
+                        "id": "UDF-d0pZqZwbMa4h0Ucmo",
+                        "data": [],
+                        "key": "fD3PwGoHT3"
+                    }
+                ],
+                "data": {},
+                "key": "j6GJG1wAi5"
+            },
+            {
+                "type": "block",
+                "children": [],
+                "key": "yRiKwNwOEZ"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "debut()\ncarre(1)  # La fourmi doit faire un tour sur elle-même",
+                        "key": "HkUEpgiOtn"
+                    },
+                    {
+                        "type": "output",
+                        "id": "WXW200YING1Y5VW1QK_Z1",
+                        "data": [],
+                        "key": "EmasxjQkli"
+                    }
+                ],
+                "data": {},
+                "key": "rzYfZvaUNU"
+            },
+            {
+                "type": "block",
+                "children": [],
+                "key": "AGNOVGMeGj"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "debut()\ncarre(5)  # la fourmi doit parcourir un carré de longueur 5 cases",
+                        "key": "tQDsyO7M6r"
+                    },
+                    {
+                        "type": "output",
+                        "id": "j--GCgF2IJIuIkIdqwizY",
+                        "data": [],
+                        "key": "MUrNikuUFD"
+                    }
+                ],
+                "data": {},
+                "key": "HA9sLGkMDR"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 512,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 512,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "heading",
+                        "depth": 2,
+                        "position": {
+                            "start": {
+                                "line": 514,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 514,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Bilan",
+                                "position": {
+                                    "start": {
+                                        "line": 514,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 514,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "ug6WerltEU"
+                            }
+                        ],
+                        "identifier": "bilan",
+                        "label": "Bilan",
+                        "html_id": "bilan",
+                        "implicit": true,
+                        "key": "pWvg0KummI"
+                    },
+                    {
+                        "type": "admonition",
+                        "kind": "tip",
+                        "children": [
+                            {
+                                "type": "admonitionTitle",
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "À retenir",
+                                        "position": {
+                                            "start": {
+                                                "line": 516,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 516,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "u3npPhajxW"
+                                    }
+                                ],
+                                "key": "ZeucC5N8xm"
+                            },
+                            {
+                                "type": "paragraph",
+                                "position": {
+                                    "start": {
+                                        "line": 517,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 517,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Lorsque la boucle fait intervenir un compteur, on utilise généralement une boucle for et sinon une boucle while.",
+                                        "position": {
+                                            "start": {
+                                                "line": 517,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 517,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "EWWdS3JzWS"
+                                    }
+                                ],
+                                "key": "xmE3DmXeMH"
+                            }
+                        ],
+                        "key": "FHVjh7ZJve"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-49a7205ebd424a67",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "jhN9MYCWpW"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 520,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 520,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 522,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 522,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "link",
+                                "url": "/",
+                                "position": {
+                                    "start": {
+                                        "line": 522,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 522,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Retourner à l’index",
+                                        "position": {
+                                            "start": {
+                                                "line": 522,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 522,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "Egz3GQiLLG"
+                                    }
+                                ],
+                                "urlSource": "../index.md",
+                                "dataUrl": "/sources.index.json",
+                                "internal": true,
+                                "protocol": "file",
+                                "key": "IsnVkZtXRA"
+                            }
+                        ],
+                        "key": "xMubOGiKh0"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-68bb0228a2203547",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "DAjPEOCssm"
+            }
+        ],
+        "key": "Eg9Bg59yBS"
+    },
+    "references": {
+        "cite": {
+            "order": [],
+            "data": {}
+        }
+    }
+}

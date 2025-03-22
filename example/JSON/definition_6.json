@@ -1,0 +1,147 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Instruction conditionnelle filée : «si ... alors ... sinon si ... alors sinon ...»",
+                    "position": {
+                        "start": {
+                            "line": 827,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 827,
+                            "column": 1
+                        }
+                    },
+                    "key": "vwJUSLQONo"
+                }
+            ],
+            "key": "kKrv9Ep2ZD"
+        },
+        {
+            "type": "admonition",
+            "children": [
+                {
+                    "type": "admonitionTitle",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Syntaxe",
+                            "position": {
+                                "start": {
+                                    "line": 829,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 829,
+                                    "column": 1
+                                }
+                            },
+                            "key": "yHfsUdX1Y0"
+                        }
+                    ],
+                    "key": "jqMxZ2PbrN"
+                },
+                {
+                    "type": "code",
+                    "lang": "python",
+                    "value": "if condition1:\n    bloc d instructions 1\nelif condition2:\n    bloc d instructions 2\nelse:\n    bloc d instructions 3",
+                    "position": {
+                        "start": {
+                            "line": 830,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 837,
+                            "column": 1
+                        }
+                    },
+                    "key": "Z8CeTrJ2E6"
+                }
+            ],
+            "key": "gWEeXqmyfi"
+        },
+        {
+            "type": "admonition",
+            "children": [
+                {
+                    "type": "admonitionTitle",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Sémantique",
+                            "position": {
+                                "start": {
+                                    "line": 840,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 840,
+                                    "column": 1
+                                }
+                            },
+                            "key": "DA12FeAruy"
+                        }
+                    ],
+                    "key": "ZQLdjvplcD"
+                },
+                {
+                    "type": "paragraph",
+                    "position": {
+                        "start": {
+                            "line": 841,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 841,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Le code ci-dessus est strictement équivalent à (mais plus lisible que) :",
+                            "position": {
+                                "start": {
+                                    "line": 841,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 841,
+                                    "column": 1
+                                }
+                            },
+                            "key": "oY6FxcLgN8"
+                        }
+                    ],
+                    "key": "mlkT5ytxgl"
+                },
+                {
+                    "type": "code",
+                    "lang": "python",
+                    "value": "if condition1:\n    bloc d instructions 1\nelse:\n    if condition2:\n        bloc d instructions 2\n    else:\n        bloc d instructions 3",
+                    "position": {
+                        "start": {
+                            "line": 842,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 850,
+                            "column": 1
+                        }
+                    },
+                    "key": "qYcGqnIJJt"
+                }
+            ],
+            "key": "WL6oSHFYn2"
+        }
+    ],
+    "label": "instruction_conditionnelle_filee",
+    "identifier": "instruction_conditionnelle_filee",
+    "html_id": "instruction-conditionnelle-filee",
+    "key": "HLoY0oXpEx"
+}
