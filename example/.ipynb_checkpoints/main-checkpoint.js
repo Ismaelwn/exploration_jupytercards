@@ -1,7 +1,7 @@
 import { exec } from 'child_process';
 
 console.log("Exécution du script Python...");
-exec("python extract.py", (error, stdout, stderr) => {
+exec("python index.py", (error, stdout, stderr) => {
     if (error) {
         console.error(`Erreur : ${error.message}`);
         return;

@@ -1,4 +1,6 @@
 import json
+import extract
+import os
 
 def extract_root_titles(node):
     with open(node, 'r', encoding='utf-8') as file:
@@ -41,9 +43,18 @@ def lire_fichier(chemin_fichier):
 
 
 def convToDict(file_path): #censé etre une definition uniquement
-    return {"front": extract_root_titles(file_path), "back": lire_fichier("HTML/"+file_path.removeprefix("JSON/")+".html") , "topic" : "computerscience"}
+    return {"front": extract_root_titles(file_path), "back": lire_fichier("HTML/"+file_path.removeprefix("JSON/").removesuffix(".json")+".html") , "topic" : "computerscience"}
+
+
+l = []
+dossier = os.listdir("JSON")
+for fichier in dossier:
+    if fichier.endswith(".json"):
+        dict_ = convToDict("JSON/"+fichier)
+        l.append(dict_)
+        print(f"--- {fichier} traité ---\n")
+
+extract.writeInFile(l, "def_converted_jupC.json")
 
 
 
-
-print(convToDict("JSON/definition_10.json"))

@@ -1,0 +1,215 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Instruction conditionnelle alternative : «si ... alors ... sinon ...»",
+                    "position": {
+                        "start": {
+                            "line": 281,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 281,
+                            "column": 1
+                        }
+                    },
+                    "key": "O6IdcDWHpl"
+                }
+            ],
+            "key": "H9LGbHmkTJ"
+        },
+        {
+            "type": "admonition",
+            "children": [
+                {
+                    "type": "admonitionTitle",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Syntaxe",
+                            "position": {
+                                "start": {
+                                    "line": 283,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 283,
+                                    "column": 1
+                                }
+                            },
+                            "key": "dPPpawUF6L"
+                        }
+                    ],
+                    "key": "C2hqijdAOp"
+                },
+                {
+                    "type": "code",
+                    "lang": "python",
+                    "value": "if condition:\n    bloc d instructions 1\nelse:\n    bloc d instructions 2",
+                    "position": {
+                        "start": {
+                            "line": 284,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 289,
+                            "column": 1
+                        }
+                    },
+                    "key": "haiuQa5qQO"
+                }
+            ],
+            "key": "AidISqDuol"
+        },
+        {
+            "type": "admonition",
+            "children": [
+                {
+                    "type": "admonitionTitle",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Sémantique",
+                            "position": {
+                                "start": {
+                                    "line": 292,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 292,
+                                    "column": 1
+                                }
+                            },
+                            "key": "mEqQtL58eH"
+                        }
+                    ],
+                    "key": "ZjoXBfiiop"
+                },
+                {
+                    "type": "list",
+                    "ordered": true,
+                    "start": 1,
+                    "spread": false,
+                    "position": {
+                        "start": {
+                            "line": 293,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 295,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "listItem",
+                            "spread": true,
+                            "position": {
+                                "start": {
+                                    "line": 293,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 293,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "Évaluation de la condition",
+                                    "position": {
+                                        "start": {
+                                            "line": 293,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 293,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "DZENY2NB5j"
+                                }
+                            ],
+                            "key": "qxQkR3bCHC"
+                        },
+                        {
+                            "type": "listItem",
+                            "spread": true,
+                            "position": {
+                                "start": {
+                                    "line": 294,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 294,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "Si sa valeur est «Vrai», exécution du bloc d’instructions 1",
+                                    "position": {
+                                        "start": {
+                                            "line": 294,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 294,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "ZSeXzbdekW"
+                                }
+                            ],
+                            "key": "OYQqFuPgCo"
+                        },
+                        {
+                            "type": "listItem",
+                            "spread": true,
+                            "position": {
+                                "start": {
+                                    "line": 295,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 295,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "Si sa valeur est «Faux», exécution du bloc d’instructions 2",
+                                    "position": {
+                                        "start": {
+                                            "line": 295,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 295,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "FUR873U9Dv"
+                                }
+                            ],
+                            "key": "NoayPdDmH0"
+                        }
+                    ],
+                    "key": "XEZV8Q8Cz0"
+                }
+            ],
+            "key": "gZY4AexlJu"
+        }
+    ],
+    "label": "instruction_conditionnelle_alternative",
+    "identifier": "instruction_conditionnelle_alternative",
+    "html_id": "instruction-conditionnelle-alternative",
+    "key": "UwD2mBHXmc"
+}

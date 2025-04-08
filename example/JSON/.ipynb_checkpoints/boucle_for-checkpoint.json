@@ -1,0 +1,371 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "boucle for",
+                    "position": {
+                        "start": {
+                            "line": 188,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 188,
+                            "column": 1
+                        }
+                    },
+                    "key": "Pv4ur2LECv"
+                }
+            ],
+            "key": "Ha7BGJByUh"
+        },
+        {
+            "type": "admonition",
+            "children": [
+                {
+                    "type": "admonitionTitle",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Syntaxe :",
+                            "position": {
+                                "start": {
+                                    "line": 190,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 190,
+                                    "column": 1
+                                }
+                            },
+                            "key": "ERHA5MCAAR"
+                        }
+                    ],
+                    "key": "iUOsoFL3Is"
+                },
+                {
+                    "type": "code",
+                    "lang": "python",
+                    "value": "for i in range(début, fin, pas):\n    # bloc d'instructions",
+                    "position": {
+                        "start": {
+                            "line": 192,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 195,
+                            "column": 1
+                        }
+                    },
+                    "key": "vC5lRhuYs1"
+                }
+            ],
+            "key": "dr2jQ9Gqf1"
+        },
+        {
+            "type": "admonition",
+            "children": [
+                {
+                    "type": "admonitionTitle",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Sémantique",
+                            "position": {
+                                "start": {
+                                    "line": 198,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 198,
+                                    "column": 1
+                                }
+                            },
+                            "key": "FCTr0IRy0G"
+                        }
+                    ],
+                    "key": "nXnjNFlTsJ"
+                },
+                {
+                    "type": "list",
+                    "ordered": true,
+                    "start": 1,
+                    "spread": false,
+                    "position": {
+                        "start": {
+                            "line": 200,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 203,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "listItem",
+                            "spread": true,
+                            "position": {
+                                "start": {
+                                    "line": 200,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 200,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "Initialisation : au début de la boucle, Python extrait la première valeur donnée par ",
+                                    "position": {
+                                        "start": {
+                                            "line": 200,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 200,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "LjDxA1Kz4N"
+                                },
+                                {
+                                    "type": "inlineMath",
+                                    "value": "range()",
+                                    "position": {
+                                        "start": {
+                                            "line": 200,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 200,
+                                            "column": 1
+                                        }
+                                    },
+                                    "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mi>a</mi><mi>n</mi><mi>g</mi><mi>e</mi><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">range()</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">an</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mopen\">(</span><span class=\"mclose\">)</span></span></span></span>",
+                                    "key": "UEITiVQex6"
+                                },
+                                {
+                                    "type": "text",
+                                    "value": ", et elle est placée dans la variable temporaire ",
+                                    "position": {
+                                        "start": {
+                                            "line": 200,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 200,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "D5tpRm0RQX"
+                                },
+                                {
+                                    "type": "inlineMath",
+                                    "value": "i",
+                                    "position": {
+                                        "start": {
+                                            "line": 200,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 200,
+                                            "column": 1
+                                        }
+                                    },
+                                    "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">i</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6595em;\"></span><span class=\"mord mathnormal\">i</span></span></span></span>",
+                                    "key": "vPojMcE3ah"
+                                },
+                                {
+                                    "type": "text",
+                                    "value": ".",
+                                    "position": {
+                                        "start": {
+                                            "line": 200,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 200,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "ZVHp3FlJkX"
+                                }
+                            ],
+                            "key": "scGxi5GiuH"
+                        },
+                        {
+                            "type": "listItem",
+                            "spread": true,
+                            "position": {
+                                "start": {
+                                    "line": 201,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 201,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "Bloc d’instructions : le bloc sous la boucle est exécuté.",
+                                    "position": {
+                                        "start": {
+                                            "line": 201,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 201,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "s1mcen21Iw"
+                                }
+                            ],
+                            "key": "sqq2GXeX4h"
+                        },
+                        {
+                            "type": "listItem",
+                            "spread": true,
+                            "position": {
+                                "start": {
+                                    "line": 202,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 202,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "Itération : Python extrait le prochain élément donné par ",
+                                    "position": {
+                                        "start": {
+                                            "line": 202,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 202,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "q67e1HjtXB"
+                                },
+                                {
+                                    "type": "inlineMath",
+                                    "value": "range()",
+                                    "position": {
+                                        "start": {
+                                            "line": 202,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 202,
+                                            "column": 1
+                                        }
+                                    },
+                                    "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mi>a</mi><mi>n</mi><mi>g</mi><mi>e</mi><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">range()</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathnormal\">an</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mopen\">(</span><span class=\"mclose\">)</span></span></span></span>",
+                                    "key": "i2CTlKbsyV"
+                                },
+                                {
+                                    "type": "text",
+                                    "value": " et affecte sa valeur à la variable ",
+                                    "position": {
+                                        "start": {
+                                            "line": 202,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 202,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "jPZCCL3a4T"
+                                },
+                                {
+                                    "type": "inlineMath",
+                                    "value": "i",
+                                    "position": {
+                                        "start": {
+                                            "line": 202,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 202,
+                                            "column": 1
+                                        }
+                                    },
+                                    "html": "<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">i</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6595em;\"></span><span class=\"mord mathnormal\">i</span></span></span></span>",
+                                    "key": "rbXttpKOme"
+                                },
+                                {
+                                    "type": "text",
+                                    "value": ".",
+                                    "position": {
+                                        "start": {
+                                            "line": 202,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 202,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "q8U0LlBTIb"
+                                }
+                            ],
+                            "key": "WL5FjCRMdZ"
+                        },
+                        {
+                            "type": "listItem",
+                            "spread": true,
+                            "position": {
+                                "start": {
+                                    "line": 203,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 203,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "Fin de boucle : La boucle se termine lorsque toutes les valeurs ont été parcourues.",
+                                    "position": {
+                                        "start": {
+                                            "line": 203,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 203,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "BviB3tianQ"
+                                }
+                            ],
+                            "key": "V11QikMCAL"
+                        }
+                    ],
+                    "key": "VcOpTZNab6"
+                }
+            ],
+            "key": "vz9ifYW6su"
+        }
+    ],
+    "label": "boucles_for",
+    "identifier": "boucles_for",
+    "html_id": "boucles-for",
+    "key": "f97g6YHe4B"
+}
