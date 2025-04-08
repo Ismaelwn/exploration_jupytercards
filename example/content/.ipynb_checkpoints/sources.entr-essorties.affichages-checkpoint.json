@@ -1,0 +1,1154 @@
+{
+    "kind": "Notebook",
+    "sha256": "e9ae08a9977d896759669a17b499002d1a30cf96fdf5296875e2d89ce5862cd8",
+    "slug": "sources.entr-essorties.affichages",
+    "location": "/Sources/EntréesSorties/05-affichages.md",
+    "dependencies": [],
+    "frontmatter": {
+        "title": "Affichages",
+        "kernelspec": {
+            "name": "python3",
+            "display_name": "Python 3 (ipykernel)",
+            "language": "python"
+        },
+        "jupytext": {
+            "text_representation": {
+                "extension": ".md",
+                "format_name": "myst",
+                "format_version": "0.13"
+            }
+        },
+        "content_includes_title": false,
+        "open_access": true,
+        "license": {
+            "content": {
+                "id": "CC-BY-4.0",
+                "url": "https://creativecommons.org/licenses/by/4.0/",
+                "name": "Creative Commons Attribution 4.0 International",
+                "free": true,
+                "CC": true
+            }
+        },
+        "keywords": [],
+        "copyright": "2024-",
+        "exports": [
+            {
+                "format": "md",
+                "filename": "05-affichages.md",
+                "url": "/05-affichages-fcfe40a95f930dfae9737a99a51f5e54.md"
+            }
+        ]
+    },
+    "mdast": {
+        "type": "root",
+        "children": [
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 17,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 17,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 19,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 19,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Dans les prochaines feuilles, nous aurons besoin d’afficher des informations pour tracer pas à pas l’exécution d’un programme.  Nous vous donnons ici le minimum nécessaire pour cela. Nous reviendrons dessus plus en détail ultérieurement.",
+                                "position": {
+                                    "start": {
+                                        "line": 19,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 19,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "O4XyLu7BRc"
+                            }
+                        ],
+                        "key": "UbhtYJaNrn"
+                    },
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 21,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 21,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "L’affichage à l’écran est une des façons de communiquer entre le programme et l’utilisateur. Comme on l’a vu jusqu’à présent, lorsque l’on exécute une cellule dans Jupyter, la valeur de la ",
+                                "position": {
+                                    "start": {
+                                        "line": 21,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 21,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "JRiBoYNUE0"
+                            },
+                            {
+                                "type": "emphasis",
+                                "position": {
+                                    "start": {
+                                        "line": 21,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 21,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "dernière expression",
+                                        "position": {
+                                            "start": {
+                                                "line": 21,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 21,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "HJAPRbmP5G"
+                                    }
+                                ],
+                                "key": "w5LRABcOTZ"
+                            },
+                            {
+                                "type": "text",
+                                "value": " de la cellule est affichée :",
+                                "position": {
+                                    "start": {
+                                        "line": 21,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 21,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "cpQ1rX24Dc"
+                            }
+                        ],
+                        "key": "r0Hqgnl35F"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-7c0b2161142c0d4b",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "iHeCYPRRc4"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "1+2\n3+4\n5+6",
+                        "key": "IeoXtZTJAY"
+                    },
+                    {
+                        "type": "output",
+                        "id": "iYMh-I-Us4n2oc9XtHS69",
+                        "data": [],
+                        "key": "iU38HW2m1a"
+                    }
+                ],
+                "data": {},
+                "key": "BVUyXBYR0w"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 38,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 38,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 40,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 41,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Les autres calculs ont bien été effectués par la machine, mais sans\nmontrer les valeurs obtenues.",
+                                "position": {
+                                    "start": {
+                                        "line": 40,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 40,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "Wrd5aMKPrC"
+                            }
+                        ],
+                        "key": "XEj2FCCRcU"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-367e4b99458161a3",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "pyKg6oW3LM"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 43,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 43,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 45,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 45,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Nous allons maintenant voir comment afficher des informations. La cellule suivante affiche le résultat du calcul :",
+                                "position": {
+                                    "start": {
+                                        "line": 45,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 45,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "vtjgJy6BNs"
+                            }
+                        ],
+                        "key": "B5Cs2Mc8s8"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-367e4b99458161a4",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "gA6buMBpIC"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "print(1+2)",
+                        "key": "XUeuF5WzUb"
+                    },
+                    {
+                        "type": "output",
+                        "id": "FwQWF51E9-XhPRzw3IF4b",
+                        "data": [],
+                        "key": "Ak9S6Iciqj"
+                    }
+                ],
+                "data": {},
+                "key": "GkG5l3je8P"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 60,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 60,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 62,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 62,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "On peut afficher plusieurs valeurs à la suite :",
+                                "position": {
+                                    "start": {
+                                        "line": 62,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 62,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "wBd0hiZ6Ph"
+                            }
+                        ],
+                        "key": "mSvNeu2X07"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-8213e311891544b6",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "BdI3F0ch3v"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "print(1+2)\nprint(3+4)\nprint(5+6)",
+                        "key": "fOo8dg29wK"
+                    },
+                    {
+                        "type": "output",
+                        "id": "v54F6PGfcgAz0cKWTtTSY",
+                        "data": [],
+                        "key": "HkYXiejgxY"
+                    }
+                ],
+                "data": {},
+                "key": "PouxJEeQxr"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 79,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 79,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 81,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 81,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "On peut aussi afficher du texte (chaînes de caractères) en utilisant les guillemets :",
+                                "position": {
+                                    "start": {
+                                        "line": 81,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 81,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "mjHF2QsN8E"
+                            }
+                        ],
+                        "key": "n6cvsulh1t"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-b86b795dcc6ef7ba",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "v07OqP7bmh"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "print(\"Bonjour, comment allez-vous ?\")",
+                        "key": "ypQVWcVWBB"
+                    },
+                    {
+                        "type": "output",
+                        "id": "27LdRtrSqRlJSvT6RIeU0",
+                        "data": [],
+                        "key": "QLuZZxDB9A"
+                    }
+                ],
+                "data": {},
+                "key": "Uvyb7AzpjL"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 96,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 96,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 98,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 98,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "On peut afficher la valeur d’une expression obtenue par évaluation d’une combinaison d’opérateurs et de variables :",
+                                "position": {
+                                    "start": {
+                                        "line": 98,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 98,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "fNy9sBn56h"
+                            }
+                        ],
+                        "key": "iC6MxaToHH"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-8e5bad07176acfae",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "zfYNsdyf0i"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "a = 1\nprint(a + 2)",
+                        "key": "Slb2XGEXRT"
+                    },
+                    {
+                        "type": "output",
+                        "id": "nwmdcU8qXlq93-3wYeRO0",
+                        "data": [],
+                        "key": "wSUMBdYwKh"
+                    }
+                ],
+                "data": {},
+                "key": "DHL9gNXL7l"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 114,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 114,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 116,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 116,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "On peut passer plusieurs arguments à la fonction print en les séparant par une virgule, ",
+                                "position": {
+                                    "start": {
+                                        "line": 116,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 116,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "tA3Kr2RKci"
+                            },
+                            {
+                                "type": "inlineCode",
+                                "value": "print",
+                                "position": {
+                                    "start": {
+                                        "line": 116,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 116,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "bn6TwqUN6r"
+                            },
+                            {
+                                "type": "text",
+                                "value": " les affichera par concaténation en utilisant un espace vide par défaut comme séparateur.",
+                                "position": {
+                                    "start": {
+                                        "line": 116,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 116,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "D3J75o0F9H"
+                            }
+                        ],
+                        "key": "AVPTIhoXQ1"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-992882d71d4cf502",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "RbVQIf5ErJ"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "age = 32\nprint(\"J'ai \", age, \" ans.\")",
+                        "key": "w2rg366WEO"
+                    },
+                    {
+                        "type": "output",
+                        "id": "aDVb7DdIpV6w64QzjGKgq",
+                        "data": [],
+                        "key": "XpWHo1LOcg"
+                    }
+                ],
+                "data": {},
+                "key": "s3WP22WE7P"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 132,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 132,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 134,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 134,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "strong",
+                                "position": {
+                                    "start": {
+                                        "line": 134,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 134,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Exercice ♣",
+                                        "position": {
+                                            "start": {
+                                                "line": 134,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 134,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "ifh9k9xRwZ"
+                                    }
+                                ],
+                                "key": "SqvP6TSZX5"
+                            }
+                        ],
+                        "key": "cSDbLKsrYI"
+                    },
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 136,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 137,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 136,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 137,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Adaptez l’exemple précédent pour afficher votre âge :",
+                                        "position": {
+                                            "start": {
+                                                "line": 136,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 136,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "FwePxZ4lmk"
+                                    }
+                                ],
+                                "key": "lV6Mz9ewHI"
+                            }
+                        ],
+                        "key": "G2c1TGBvyZ"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-63ee395ef8395a98",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "RgKRp7NwOG"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "### BEGIN SOLUTION\nage = 46\nprint(\"J'ai \", age, \" ans.\")\n### END SOLUTION;",
+                        "key": "Vg1d1vExNo"
+                    },
+                    {
+                        "type": "output",
+                        "id": "EqhiVs_X11gtTDp1VL2vF",
+                        "data": [],
+                        "key": "JfW4YlVNWk"
+                    }
+                ],
+                "data": {},
+                "key": "FY7Ucfaohs"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 155,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 155,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "list",
+                        "ordered": false,
+                        "spread": false,
+                        "position": {
+                            "start": {
+                                "line": 157,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 159,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "listItem",
+                                "spread": true,
+                                "position": {
+                                    "start": {
+                                        "line": 157,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 159,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "**Utilisez la variable ",
+                                        "position": {
+                                            "start": {
+                                                "line": 157,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 157,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "z6ICGvpCgs"
+                                    },
+                                    {
+                                        "type": "inlineCode",
+                                        "value": "annee",
+                                        "position": {
+                                            "start": {
+                                                "line": 157,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 157,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "wN1a9Pgx6l"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "value": " ci-dessous pour afficher “Je suis\nné(e) en ****” où les **** sont votre année de naissance :",
+                                        "position": {
+                                            "start": {
+                                                "line": 157,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 157,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "yJFbra6i2i"
+                                    }
+                                ],
+                                "key": "vDGjywRpAQ"
+                            }
+                        ],
+                        "key": "HqP3LTxZIM"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-63ee395ef8395a99",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "jDVvwkRAtR"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "annee = 2000",
+                        "key": "Hy0hCNGPtK"
+                    },
+                    {
+                        "type": "output",
+                        "id": "3cnglBnj-pZ-1EdruVT1k",
+                        "data": [],
+                        "key": "nbVuHgs6hM"
+                    }
+                ],
+                "data": {},
+                "key": "pSxI5rVCGX"
+            },
+            {
+                "type": "block",
+                "children": [],
+                "key": "xVIM70VwAV"
+            },
+            {
+                "type": "block",
+                "kind": "notebook-code",
+                "children": [
+                    {
+                        "type": "code",
+                        "lang": "python",
+                        "executable": true,
+                        "value": "### BEGIN SOLUTION\nannee = 1985\nprint(\"Je suis née en \", annee)\n### END SOLUTION;",
+                        "key": "fuczITdtyt"
+                    },
+                    {
+                        "type": "output",
+                        "id": "QaqPpiECm9zawtNap2NX-",
+                        "data": [],
+                        "key": "lCcqRGyaEF"
+                    }
+                ],
+                "data": {},
+                "key": "OZ0C9zaR77"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 190,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 190,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "heading",
+                        "depth": 2,
+                        "position": {
+                            "start": {
+                                "line": 192,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 192,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Bilan",
+                                "position": {
+                                    "start": {
+                                        "line": 192,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 192,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "dFeaKmiZrE"
+                            }
+                        ],
+                        "identifier": "bilan",
+                        "label": "Bilan",
+                        "html_id": "bilan",
+                        "implicit": true,
+                        "key": "MgG1J7TDM5"
+                    },
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 194,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 197,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "text",
+                                "value": "Dans cette feuille, nous avons aperçu le minimum requis pour afficher\ndes valeurs en python. Cela cela servira dans la suite du\nTP pour tracer les étapes intermédiaires dans l’exécution d’une\nboucle.",
+                                "position": {
+                                    "start": {
+                                        "line": 194,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 194,
+                                        "column": 1
+                                    }
+                                },
+                                "key": "UEWdSI5iUa"
+                            }
+                        ],
+                        "key": "s8YeAQXlX4"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-252c753e5c506efc",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "pWMK30jV3r"
+            },
+            {
+                "type": "block",
+                "position": {
+                    "start": {
+                        "line": 199,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 199,
+                        "column": 1
+                    }
+                },
+                "children": [
+                    {
+                        "type": "paragraph",
+                        "position": {
+                            "start": {
+                                "line": 201,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 201,
+                                "column": 1
+                            }
+                        },
+                        "children": [
+                            {
+                                "type": "link",
+                                "url": "/",
+                                "position": {
+                                    "start": {
+                                        "line": 201,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 201,
+                                        "column": 1
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "type": "text",
+                                        "value": "Retourner à l’index",
+                                        "position": {
+                                            "start": {
+                                                "line": 201,
+                                                "column": 1
+                                            },
+                                            "end": {
+                                                "line": 201,
+                                                "column": 1
+                                            }
+                                        },
+                                        "key": "BSg7t3RvYq"
+                                    }
+                                ],
+                                "urlSource": "../index.md",
+                                "dataUrl": "/sources.index.json",
+                                "internal": true,
+                                "protocol": "file",
+                                "key": "rkAqbb6PRJ"
+                            }
+                        ],
+                        "key": "fqjxZs9yin"
+                    }
+                ],
+                "data": {
+                    "nbgrader": {
+                        "grade": false,
+                        "grade_id": "cell-3c19154ab023014c",
+                        "locked": true,
+                        "schema_version": 3,
+                        "solution": false,
+                        "task": false
+                    }
+                },
+                "key": "rK9XOBmEFE"
+            }
+        ],
+        "key": "RGWQldRA7F"
+    },
+    "references": {
+        "cite": {
+            "order": [],
+            "data": {}
+        }
+    }
+}

@@ -1,0 +1,304 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Définition 9",
+                    "position": {
+                        "start": {
+                            "line": 113,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 113,
+                            "column": 1
+                        }
+                    },
+                    "key": "QQqh3Z1Jhs"
+                }
+            ],
+            "key": "TnUsuXC5Ee"
+        },
+        {
+            "type": "paragraph",
+            "position": {
+                "start": {
+                    "line": 115,
+                    "column": 1
+                },
+                "end": {
+                    "line": 116,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "text",
+                    "value": "En Python, chaque ",
+                    "position": {
+                        "start": {
+                            "line": 115,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 115,
+                            "column": 1
+                        }
+                    },
+                    "key": "h0ONDlWQiJ"
+                },
+                {
+                    "type": "text",
+                    "value": "valeur",
+                    "key": "xx1y8c7kLu"
+                },
+                {
+                    "type": "text",
+                    "value": " a un ",
+                    "position": {
+                        "start": {
+                            "line": 115,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 115,
+                            "column": 1
+                        }
+                    },
+                    "key": "ylTXDXXyBK"
+                },
+                {
+                    "type": "strong",
+                    "children": [
+                        {
+                            "type": "span",
+                            "children": [],
+                            "key": "M5sPiFdsen"
+                        },
+                        {
+                            "type": "span",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "type",
+                                    "label": "type",
+                                    "identifier": "type",
+                                    "html_id": "type",
+                                    "key": "VzvMnczmL9"
+                                }
+                            ],
+                            "indexEntries": [
+                                {
+                                    "entry": "type",
+                                    "emphasis": true
+                                }
+                            ],
+                            "label": "index-L4j4M4pKUU",
+                            "identifier": "index-l4j4m4pkuu",
+                            "html_id": "index-l4j4m4pkuu",
+                            "key": "ycoGnfMPD5"
+                        }
+                    ],
+                    "key": "QPg1BVrfOX"
+                },
+                {
+                    "type": "text",
+                    "value": " qui décrit\nsa nature. Ce type spécifie en outre :",
+                    "position": {
+                        "start": {
+                            "line": 115,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 115,
+                            "column": 1
+                        }
+                    },
+                    "key": "XwNrxSqY9W"
+                }
+            ],
+            "key": "s679oo1lZ1"
+        },
+        {
+            "type": "list",
+            "ordered": false,
+            "spread": false,
+            "position": {
+                "start": {
+                    "line": 117,
+                    "column": 1
+                },
+                "end": {
+                    "line": 119,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "listItem",
+                    "spread": true,
+                    "position": {
+                        "start": {
+                            "line": 117,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 118,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "La ",
+                            "position": {
+                                "start": {
+                                    "line": 117,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 117,
+                                    "column": 1
+                                }
+                            },
+                            "key": "IXrHhW82f6"
+                        },
+                        {
+                            "type": "strong",
+                            "position": {
+                                "start": {
+                                    "line": 117,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 117,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "structure de donnée",
+                                    "position": {
+                                        "start": {
+                                            "line": 117,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 117,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "zbdzwzPPf7"
+                                }
+                            ],
+                            "key": "BANZf4SsNh"
+                        },
+                        {
+                            "type": "text",
+                            "value": " : comment la valeur est représentée en\nmémoire.",
+                            "position": {
+                                "start": {
+                                    "line": 117,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 117,
+                                    "column": 1
+                                }
+                            },
+                            "key": "XVsMkadVto"
+                        }
+                    ],
+                    "key": "aamsm4ABGL"
+                },
+                {
+                    "type": "listItem",
+                    "spread": true,
+                    "position": {
+                        "start": {
+                            "line": 119,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 119,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "La ",
+                            "position": {
+                                "start": {
+                                    "line": 119,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 119,
+                                    "column": 1
+                                }
+                            },
+                            "key": "o2igvMXiv0"
+                        },
+                        {
+                            "type": "strong",
+                            "position": {
+                                "start": {
+                                    "line": 119,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 119,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "sémantique",
+                                    "position": {
+                                        "start": {
+                                            "line": 119,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 119,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "Vrww6uFNp5"
+                                }
+                            ],
+                            "key": "OVdFhgs7Mk"
+                        },
+                        {
+                            "type": "text",
+                            "value": " des opérations.",
+                            "position": {
+                                "start": {
+                                    "line": 119,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 119,
+                                    "column": 1
+                                }
+                            },
+                            "key": "yYAh0gUU0J"
+                        }
+                    ],
+                    "key": "TaQ6peK2PM"
+                }
+            ],
+            "key": "DOjb1wSREQ"
+        }
+    ],
+    "label": "type",
+    "identifier": "type",
+    "html_id": "type",
+    "key": "UeeUBWxCpK"
+}

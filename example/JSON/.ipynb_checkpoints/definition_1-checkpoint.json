@@ -1,0 +1,460 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "La fonction range()",
+                    "position": {
+                        "start": {
+                            "line": 104,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 104,
+                            "column": 1
+                        }
+                    },
+                    "key": "A8KAGJbkDt"
+                }
+            ],
+            "key": "gZFaH8ZqKf"
+        },
+        {
+            "type": "paragraph",
+            "position": {
+                "start": {
+                    "line": 106,
+                    "column": 1
+                },
+                "end": {
+                    "line": 106,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "text",
+                    "value": "La fonction ",
+                    "position": {
+                        "start": {
+                            "line": 106,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 106,
+                            "column": 1
+                        }
+                    },
+                    "key": "ECfF1WpQlV"
+                },
+                {
+                    "type": "inlineCode",
+                    "value": "range",
+                    "position": {
+                        "start": {
+                            "line": 106,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 106,
+                            "column": 1
+                        }
+                    },
+                    "key": "E7Tw051JCa"
+                },
+                {
+                    "type": "text",
+                    "value": " renvoie une séquence d’entiers. Elle est souvent utilisée dans les boucles pour répéter une action un certain nombre de fois. Elle peut-être utilisée sous trois formes :",
+                    "position": {
+                        "start": {
+                            "line": 106,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 106,
+                            "column": 1
+                        }
+                    },
+                    "key": "zN7uyqsayH"
+                }
+            ],
+            "key": "qekAyTn44D"
+        },
+        {
+            "type": "list",
+            "ordered": false,
+            "spread": false,
+            "position": {
+                "start": {
+                    "line": 108,
+                    "column": 1
+                },
+                "end": {
+                    "line": 110,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "listItem",
+                    "spread": true,
+                    "position": {
+                        "start": {
+                            "line": 108,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 108,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "inlineCode",
+                            "value": "range(fin)",
+                            "position": {
+                                "start": {
+                                    "line": 108,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 108,
+                                    "column": 1
+                                }
+                            },
+                            "key": "ArxvKlY46s"
+                        },
+                        {
+                            "type": "text",
+                            "value": " : génère une séquence d’entiers de ",
+                            "position": {
+                                "start": {
+                                    "line": 108,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 108,
+                                    "column": 1
+                                }
+                            },
+                            "key": "vpezH2jUBm"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "0",
+                            "position": {
+                                "start": {
+                                    "line": 108,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 108,
+                                    "column": 1
+                                }
+                            },
+                            "key": "R1Bdyp7znT"
+                        },
+                        {
+                            "type": "text",
+                            "value": " à ",
+                            "position": {
+                                "start": {
+                                    "line": 108,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 108,
+                                    "column": 1
+                                }
+                            },
+                            "key": "gm2i0oqY2e"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "fin",
+                            "position": {
+                                "start": {
+                                    "line": 108,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 108,
+                                    "column": 1
+                                }
+                            },
+                            "key": "XEYgG3A68T"
+                        },
+                        {
+                            "type": "text",
+                            "value": " exclu.",
+                            "position": {
+                                "start": {
+                                    "line": 108,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 108,
+                                    "column": 1
+                                }
+                            },
+                            "key": "TFKLbgVmI2"
+                        }
+                    ],
+                    "key": "SbRKAgi7RX"
+                },
+                {
+                    "type": "listItem",
+                    "spread": true,
+                    "position": {
+                        "start": {
+                            "line": 109,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 109,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "inlineCode",
+                            "value": "range(début, fin)",
+                            "position": {
+                                "start": {
+                                    "line": 109,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 109,
+                                    "column": 1
+                                }
+                            },
+                            "key": "TNxrruhuOo"
+                        },
+                        {
+                            "type": "text",
+                            "value": " : génère une séquence d’entiers de ",
+                            "position": {
+                                "start": {
+                                    "line": 109,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 109,
+                                    "column": 1
+                                }
+                            },
+                            "key": "grOxoc9knU"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "début",
+                            "position": {
+                                "start": {
+                                    "line": 109,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 109,
+                                    "column": 1
+                                }
+                            },
+                            "key": "J8ptiVXqtK"
+                        },
+                        {
+                            "type": "text",
+                            "value": " à ",
+                            "position": {
+                                "start": {
+                                    "line": 109,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 109,
+                                    "column": 1
+                                }
+                            },
+                            "key": "el8U8aPa1p"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "fin",
+                            "position": {
+                                "start": {
+                                    "line": 109,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 109,
+                                    "column": 1
+                                }
+                            },
+                            "key": "yISA4n04tQ"
+                        },
+                        {
+                            "type": "text",
+                            "value": " exclu.",
+                            "position": {
+                                "start": {
+                                    "line": 109,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 109,
+                                    "column": 1
+                                }
+                            },
+                            "key": "BCToZJ8IxM"
+                        }
+                    ],
+                    "key": "FzWqQEOd1B"
+                },
+                {
+                    "type": "listItem",
+                    "spread": true,
+                    "position": {
+                        "start": {
+                            "line": 110,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 110,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "inlineCode",
+                            "value": "range(début, fin, pas)",
+                            "position": {
+                                "start": {
+                                    "line": 110,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 110,
+                                    "column": 1
+                                }
+                            },
+                            "key": "ACVwdpuT6c"
+                        },
+                        {
+                            "type": "text",
+                            "value": " : génère une séquence d’entiers de ",
+                            "position": {
+                                "start": {
+                                    "line": 110,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 110,
+                                    "column": 1
+                                }
+                            },
+                            "key": "WnNevr7nGp"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "début",
+                            "position": {
+                                "start": {
+                                    "line": 110,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 110,
+                                    "column": 1
+                                }
+                            },
+                            "key": "re6bOQihSF"
+                        },
+                        {
+                            "type": "text",
+                            "value": " à ",
+                            "position": {
+                                "start": {
+                                    "line": 110,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 110,
+                                    "column": 1
+                                }
+                            },
+                            "key": "o9WXHDnKje"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "fin",
+                            "position": {
+                                "start": {
+                                    "line": 110,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 110,
+                                    "column": 1
+                                }
+                            },
+                            "key": "dwtHgmf9RH"
+                        },
+                        {
+                            "type": "text",
+                            "value": " exclu, par pas de ",
+                            "position": {
+                                "start": {
+                                    "line": 110,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 110,
+                                    "column": 1
+                                }
+                            },
+                            "key": "MKkrxZkfXv"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "pas",
+                            "position": {
+                                "start": {
+                                    "line": 110,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 110,
+                                    "column": 1
+                                }
+                            },
+                            "key": "p4F4XROmsz"
+                        },
+                        {
+                            "type": "text",
+                            "value": ".",
+                            "position": {
+                                "start": {
+                                    "line": 110,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 110,
+                                    "column": 1
+                                }
+                            },
+                            "key": "XpJnal3eMF"
+                        }
+                    ],
+                    "key": "KWwSobuosn"
+                }
+            ],
+            "key": "UWsQpl1aUb"
+        }
+    ],
+    "label": "range",
+    "identifier": "range",
+    "html_id": "range",
+    "key": "nYgkwkpOAx"
+}
