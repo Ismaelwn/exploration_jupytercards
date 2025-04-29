@@ -6,7 +6,7 @@
             "children": [
                 {
                     "type": "text",
-                    "value": "Bloc d’instructions",
+                    "value": "Définition : Bloc d’instructions",
                     "position": {
                         "start": {
                             "line": 223,

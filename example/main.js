@@ -17,3 +17,4 @@ exec("python index.py", (error, stdout, stderr) => {
         console.log(`Sortie JavaScript :\n${stdout}`);
     });
 });
+

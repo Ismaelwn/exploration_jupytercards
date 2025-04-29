@@ -2,28 +2,15 @@ import json
 import extract
 import os
 
-def extract_root_titles(node):
-    with open(node, 'r', encoding='utf-8') as file:
-        data = json.load(file)
-    def _(node):
-        titles = []
-        if isinstance(node, dict) and node.get("type") == "admonition":
-            for child in node.get("children", []):
-                if child.get("type") == "admonitionTitle":
-                    title = "".join(
-                        grandchild["value"]
-                        for grandchild in child.get("children", [])
-                        if "value" in grandchild
-                    )
-                    if title:
-                        titles.append(title)
+
+'''
+Code pour créer une liste de dictionnaires stockées format Json
+'''
+
+def extract_root_titles(title):
+    rtrn = title.removeprefix("JSON/").removesuffix(".json")
+    return rtrn.replace("_", " ").capitalize()
     
-        elif isinstance(node, list):
-            for item in node:
-                titles.extend(extract_root_titles(item))
-    
-        return titles
-    return " ".join(_(data))
 
 def lire_fichier(chemin_fichier):
     """
@@ -43,8 +30,11 @@ def lire_fichier(chemin_fichier):
 
 
 def convToDict(file_path): #censé etre une definition uniquement
-    return {"front": extract_root_titles(file_path), "back": lire_fichier("HTML/"+file_path.removeprefix("JSON/").removesuffix(".json")+".html") , "topic" : "computerscience"}
+   return {"front": extract_root_titles(file_path), "back": lire_fichier("HTML/"+file_path.removeprefix("JSON/").removesuffix(".json")+".html") , "topic" : "computerscience"}
 
+'''
+     return {"front": extract_root_titles(file_path), "back": lire_fichier("HTML/"+file_path.removeprefix("JSON/").removesuffix(".json")+".html") , "topic" : "computerscience"}
+'''
 
 l = []
 dossier = os.listdir("JSON")
@@ -54,7 +44,7 @@ for fichier in dossier:
         l.append(dict_)
         print(f"--- {fichier} traité ---\n")
 
-extract.writeInFile(l, "def_converted_jupC.json")
+extract.writeInFile(l, "def_converted.json")
 
 
 

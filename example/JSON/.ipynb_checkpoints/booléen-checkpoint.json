@@ -1,0 +1,986 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Définition : Types de base",
+                    "position": {
+                        "start": {
+                            "line": 132,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 132,
+                            "column": 1
+                        }
+                    },
+                    "key": "IM881UZLmE"
+                }
+            ],
+            "key": "fEP7gTKyWC"
+        },
+        {
+            "type": "paragraph",
+            "position": {
+                "start": {
+                    "line": 134,
+                    "column": 1
+                },
+                "end": {
+                    "line": 134,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Les types de base en Python sont :",
+                    "position": {
+                        "start": {
+                            "line": 134,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 134,
+                            "column": 1
+                        }
+                    },
+                    "key": "vttAur44at"
+                }
+            ],
+            "key": "xtyQVQeUnW"
+        },
+        {
+            "type": "list",
+            "ordered": false,
+            "spread": false,
+            "position": {
+                "start": {
+                    "line": 137,
+                    "column": 1
+                },
+                "end": {
+                    "line": 138,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "listItem",
+                    "spread": true,
+                    "position": {
+                        "start": {
+                            "line": 137,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 138,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Les ",
+                            "position": {
+                                "start": {
+                                    "line": 137,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 137,
+                                    "column": 1
+                                }
+                            },
+                            "key": "vmJtzg0xA5"
+                        },
+                        {
+                            "type": "strong",
+                            "children": [
+                                {
+                                    "type": "span",
+                                    "children": [],
+                                    "key": "f5XkxDgR3Q"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "entiers",
+                                            "label": "entier",
+                                            "identifier": "entier",
+                                            "html_id": "entier",
+                                            "key": "Cb2N7WSJGV"
+                                        }
+                                    ],
+                                    "indexEntries": [
+                                        {
+                                            "entry": "entier",
+                                            "emphasis": true
+                                        }
+                                    ],
+                                    "label": "index-lPz64ianSG",
+                                    "identifier": "index-lpz64iansg",
+                                    "html_id": "index-lpz64iansg",
+                                    "key": "ghlFi3D5kF"
+                                }
+                            ],
+                            "key": "vactQaJTnt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " (type ",
+                            "position": {
+                                "start": {
+                                    "line": 137,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 137,
+                                    "column": 1
+                                }
+                            },
+                            "key": "iCTVrY1x8O"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "int",
+                            "position": {
+                                "start": {
+                                    "line": 137,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 137,
+                                    "column": 1
+                                }
+                            },
+                            "key": "ZJZcf679XL"
+                        },
+                        {
+                            "type": "text",
+                            "value": " pour ",
+                            "position": {
+                                "start": {
+                                    "line": 137,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 137,
+                                    "column": 1
+                                }
+                            },
+                            "key": "LxaoLjVKwA"
+                        },
+                        {
+                            "type": "emphasis",
+                            "position": {
+                                "start": {
+                                    "line": 137,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 137,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "integer",
+                                    "position": {
+                                        "start": {
+                                            "line": 137,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 137,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "qmFeGF87zt"
+                                }
+                            ],
+                            "key": "pqKIB6h4gN"
+                        },
+                        {
+                            "type": "text",
+                            "value": ")",
+                            "position": {
+                                "start": {
+                                    "line": 137,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 137,
+                                    "column": 1
+                                }
+                            },
+                            "key": "NheIFw7MGP"
+                        },
+                        {
+                            "type": "break",
+                            "position": {
+                                "start": {
+                                    "line": 137,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 137,
+                                    "column": 1
+                                }
+                            },
+                            "key": "r8JgFDPs3q"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Exemples : 1, 42, -32765",
+                            "position": {
+                                "start": {
+                                    "line": 137,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 137,
+                                    "column": 1
+                                }
+                            },
+                            "key": "mNEyJr4SD9"
+                        }
+                    ],
+                    "key": "LvmTrCvkcs"
+                }
+            ],
+            "label": "entier",
+            "identifier": "entier",
+            "html_id": "entier",
+            "key": "KqzAz3DHTr"
+        },
+        {
+            "type": "list",
+            "ordered": false,
+            "spread": false,
+            "position": {
+                "start": {
+                    "line": 140,
+                    "column": 1
+                },
+                "end": {
+                    "line": 141,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "listItem",
+                    "spread": true,
+                    "position": {
+                        "start": {
+                            "line": 140,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 141,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "les ",
+                            "position": {
+                                "start": {
+                                    "line": 140,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 140,
+                                    "column": 1
+                                }
+                            },
+                            "key": "uF47CuQaaB"
+                        },
+                        {
+                            "type": "strong",
+                            "children": [
+                                {
+                                    "type": "span",
+                                    "children": [],
+                                    "key": "Ua8qqC91Vx"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "réels",
+                                            "label": "reel",
+                                            "identifier": "reel",
+                                            "html_id": "reel",
+                                            "key": "S5c8ZSyEJt"
+                                        }
+                                    ],
+                                    "indexEntries": [
+                                        {
+                                            "entry": "réel",
+                                            "emphasis": true
+                                        }
+                                    ],
+                                    "label": "index-F8MGwABZjH",
+                                    "identifier": "index-f8mgwabzjh",
+                                    "html_id": "index-f8mgwabzjh",
+                                    "key": "cJ9UxGNio0"
+                                }
+                            ],
+                            "key": "udCpU8hM8N"
+                        },
+                        {
+                            "type": "text",
+                            "value": " (type ",
+                            "position": {
+                                "start": {
+                                    "line": 140,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 140,
+                                    "column": 1
+                                }
+                            },
+                            "key": "qCXWKPTLFk"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "float",
+                            "position": {
+                                "start": {
+                                    "line": 140,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 140,
+                                    "column": 1
+                                }
+                            },
+                            "key": "C5ahMXArpW"
+                        },
+                        {
+                            "type": "text",
+                            "value": ")",
+                            "position": {
+                                "start": {
+                                    "line": 140,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 140,
+                                    "column": 1
+                                }
+                            },
+                            "key": "jI1eVssRkl"
+                        },
+                        {
+                            "type": "break",
+                            "position": {
+                                "start": {
+                                    "line": 140,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 140,
+                                    "column": 1
+                                }
+                            },
+                            "key": "SQBkMwylcC"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Exemples : 10.43, 1.0324432e22",
+                            "position": {
+                                "start": {
+                                    "line": 140,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 140,
+                                    "column": 1
+                                }
+                            },
+                            "key": "Ya02uvMW5S"
+                        }
+                    ],
+                    "key": "De4k828Oc2"
+                }
+            ],
+            "label": "reel",
+            "identifier": "reel",
+            "html_id": "reel",
+            "key": "aGaJrBnbUF"
+        },
+        {
+            "type": "list",
+            "ordered": false,
+            "spread": false,
+            "position": {
+                "start": {
+                    "line": 144,
+                    "column": 1
+                },
+                "end": {
+                    "line": 145,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "listItem",
+                    "spread": true,
+                    "position": {
+                        "start": {
+                            "line": 144,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 145,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "les ",
+                            "position": {
+                                "start": {
+                                    "line": 144,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 144,
+                                    "column": 1
+                                }
+                            },
+                            "key": "HfkzUYID5F"
+                        },
+                        {
+                            "type": "strong",
+                            "children": [
+                                {
+                                    "type": "span",
+                                    "children": [],
+                                    "key": "WjmPhop4CF"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "chaînes de caractères",
+                                            "label": "chaine_de_characteres",
+                                            "identifier": "chaine_de_characteres",
+                                            "html_id": "chaine-de-characteres",
+                                            "key": "tlN4cGTIYd"
+                                        }
+                                    ],
+                                    "indexEntries": [
+                                        {
+                                            "entry": "chaîne de charactères",
+                                            "emphasis": true
+                                        }
+                                    ],
+                                    "label": "index-mFvJbpc2H2",
+                                    "identifier": "index-mfvjbpc2h2",
+                                    "html_id": "index-mfvjbpc2h2",
+                                    "key": "fQnseQikjV"
+                                }
+                            ],
+                            "key": "LIxTh4pFMl"
+                        },
+                        {
+                            "type": "text",
+                            "value": " (type ",
+                            "position": {
+                                "start": {
+                                    "line": 144,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 144,
+                                    "column": 1
+                                }
+                            },
+                            "key": "SsRiAAFW1Q"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "str",
+                            "position": {
+                                "start": {
+                                    "line": 144,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 144,
+                                    "column": 1
+                                }
+                            },
+                            "key": "KOMTauUiem"
+                        },
+                        {
+                            "type": "text",
+                            "value": " pour ",
+                            "position": {
+                                "start": {
+                                    "line": 144,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 144,
+                                    "column": 1
+                                }
+                            },
+                            "key": "HyC3HFFKxL"
+                        },
+                        {
+                            "type": "emphasis",
+                            "position": {
+                                "start": {
+                                    "line": 144,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 144,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "string",
+                                    "position": {
+                                        "start": {
+                                            "line": 144,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 144,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "Hf4LZc23uQ"
+                                }
+                            ],
+                            "key": "n23q1Fkqmm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "), entre guillemets ou apostrophes :",
+                            "position": {
+                                "start": {
+                                    "line": 144,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 144,
+                                    "column": 1
+                                }
+                            },
+                            "key": "uhfYPu0B6b"
+                        },
+                        {
+                            "type": "break",
+                            "position": {
+                                "start": {
+                                    "line": 144,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 144,
+                                    "column": 1
+                                }
+                            },
+                            "key": "UUaifXXYZw"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Exemples : “bonjour”, ‘Alice aime Bob’",
+                            "position": {
+                                "start": {
+                                    "line": 144,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 144,
+                                    "column": 1
+                                }
+                            },
+                            "key": "ph7Uj2ckv1"
+                        }
+                    ],
+                    "key": "GP2orOcnuv"
+                }
+            ],
+            "label": "str",
+            "identifier": "str",
+            "html_id": "str",
+            "key": "NofVUcDYPM"
+        },
+        {
+            "type": "list",
+            "ordered": false,
+            "spread": false,
+            "position": {
+                "start": {
+                    "line": 147,
+                    "column": 1
+                },
+                "end": {
+                    "line": 149,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "listItem",
+                    "spread": true,
+                    "position": {
+                        "start": {
+                            "line": 147,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 149,
+                            "column": 1
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "les ",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "kGYg5orCfq"
+                        },
+                        {
+                            "type": "strong",
+                            "children": [
+                                {
+                                    "type": "span",
+                                    "children": [],
+                                    "key": "L5ooQJSQuK"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "booléens",
+                                            "label": "booleen",
+                                            "identifier": "booleen",
+                                            "html_id": "booleen",
+                                            "key": "GqSSEBYnUy"
+                                        }
+                                    ],
+                                    "indexEntries": [
+                                        {
+                                            "entry": "booléen",
+                                            "emphasis": true
+                                        }
+                                    ],
+                                    "label": "index-fKqTDegjvD",
+                                    "identifier": "index-fkqtdegjvd",
+                                    "html_id": "index-fkqtdegjvd",
+                                    "key": "eqSvLVujOI"
+                                }
+                            ],
+                            "key": "WjoP8G0Yex"
+                        },
+                        {
+                            "type": "text",
+                            "value": " (type ",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "VhAsvbOUp6"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "bool",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "bF6P2MzfIb"
+                        },
+                        {
+                            "type": "text",
+                            "value": " pour ",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "lmCew6kkKX"
+                        },
+                        {
+                            "type": "emphasis",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "boolean",
+                                    "position": {
+                                        "start": {
+                                            "line": 147,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "line": 147,
+                                            "column": 1
+                                        }
+                                    },
+                                    "key": "bJwPoVFm0a"
+                                }
+                            ],
+                            "key": "MnAAG9UYed"
+                        },
+                        {
+                            "type": "text",
+                            "value": ")",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "hZDlPPMK3b"
+                        },
+                        {
+                            "type": "break",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "RD8LQUKg15"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Exemples : ",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "XpP6pQWOgd"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "True",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "Xkx8sWRtJa"
+                        },
+                        {
+                            "type": "text",
+                            "value": " (vrai), ",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "d9fzdAZhyO"
+                        },
+                        {
+                            "type": "inlineCode",
+                            "value": "False",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "kWSRf30eKC"
+                        },
+                        {
+                            "type": "text",
+                            "value": " (faux)",
+                            "position": {
+                                "start": {
+                                    "line": 147,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 147,
+                                    "column": 1
+                                }
+                            },
+                            "key": "aAkn0oOAF2"
+                        }
+                    ],
+                    "key": "vGxFIkrT2R"
+                }
+            ],
+            "label": "booleen",
+            "identifier": "booleen",
+            "html_id": "booleen",
+            "key": "G14yh27un1"
+        },
+        {
+            "type": "paragraph",
+            "position": {
+                "start": {
+                    "line": 151,
+                    "column": 1
+                },
+                "end": {
+                    "line": 152,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Les entiers, les caractères et les booléens forment les\n",
+                    "position": {
+                        "start": {
+                            "line": 151,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 151,
+                            "column": 1
+                        }
+                    },
+                    "key": "uOeQMKCdI4"
+                },
+                {
+                    "type": "strong",
+                    "children": [
+                        {
+                            "type": "span",
+                            "children": [],
+                            "key": "N5Rz2zQnsl"
+                        },
+                        {
+                            "type": "span",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "types ordinaux",
+                                    "label": "type_ordinal",
+                                    "identifier": "type_ordinal",
+                                    "html_id": "type-ordinal",
+                                    "key": "OqHNxiJrxW"
+                                }
+                            ],
+                            "indexEntries": [
+                                {
+                                    "entry": "type ordinal",
+                                    "emphasis": true
+                                }
+                            ],
+                            "label": "index-yuxzK1iT0Q",
+                            "identifier": "index-yuxzk1it0q",
+                            "html_id": "index-yuxzk1it0q",
+                            "key": "s6MSMJmTaL"
+                        }
+                    ],
+                    "key": "z7hbuLJziQ"
+                },
+                {
+                    "type": "text",
+                    "value": ".",
+                    "position": {
+                        "start": {
+                            "line": 151,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 151,
+                            "column": 1
+                        }
+                    },
+                    "key": "fM0E07aapI"
+                }
+            ],
+            "label": "type_ordinal",
+            "identifier": "type_ordinal",
+            "html_id": "type-ordinal",
+            "key": "likIRC5BjS"
+        }
+    ],
+    "label": "typesdebase",
+    "identifier": "typesdebase",
+    "html_id": "typesdebase",
+    "key": "aYH1fl5Yxy"
+}

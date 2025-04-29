@@ -1,0 +1,156 @@
+{
+    "type": "admonition",
+    "children": [
+        {
+            "type": "admonitionTitle",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Définition",
+                    "position": {
+                        "start": {
+                            "line": 27,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 27,
+                            "column": 1
+                        }
+                    },
+                    "key": "fxMq9lbIsP"
+                }
+            ],
+            "key": "ihJnC7qfoU"
+        },
+        {
+            "type": "paragraph",
+            "position": {
+                "start": {
+                    "line": 29,
+                    "column": 1
+                },
+                "end": {
+                    "line": 34,
+                    "column": 1
+                }
+            },
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Un carnet interactif est composé d’une séquence de\n",
+                    "position": {
+                        "start": {
+                            "line": 29,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 29,
+                            "column": 1
+                        }
+                    },
+                    "key": "bnO2GvW5LR"
+                },
+                {
+                    "type": "strong",
+                    "children": [
+                        {
+                            "type": "span",
+                            "children": [],
+                            "key": "B1f1vc5iPt"
+                        },
+                        {
+                            "type": "span",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "cellules",
+                                    "label": "cellule",
+                                    "identifier": "cellule",
+                                    "html_id": "cellule",
+                                    "key": "maKx3tPpU1"
+                                }
+                            ],
+                            "indexEntries": [
+                                {
+                                    "entry": "cellule",
+                                    "emphasis": true
+                                }
+                            ],
+                            "label": "index-AWQiAHnk8R",
+                            "identifier": "index-awqiahnk8r",
+                            "html_id": "index-awqiahnk8r",
+                            "key": "BRdG2ZpAbl"
+                        }
+                    ],
+                    "key": "akYBZh47n7"
+                },
+                {
+                    "type": "text",
+                    "value": ". Chaque cellule peut contenir du texte riche,\nun calcul à effectuer, des visualisations, etc. La\n",
+                    "position": {
+                        "start": {
+                            "line": 29,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 29,
+                            "column": 1
+                        }
+                    },
+                    "key": "rcEZiX8EGq"
+                },
+                {
+                    "type": "strong",
+                    "children": [
+                        {
+                            "type": "span",
+                            "children": [],
+                            "key": "MZrnwrzyp2"
+                        },
+                        {
+                            "type": "span",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "cellule active",
+                                    "label": "cellule_active",
+                                    "identifier": "cellule_active",
+                                    "html_id": "cellule-active",
+                                    "key": "DporoY7SgX"
+                                }
+                            ],
+                            "indexEntries": [
+                                {
+                                    "entry": "cellule active",
+                                    "emphasis": true
+                                }
+                            ],
+                            "label": "index-IeS4pPw5Jh",
+                            "identifier": "index-ies4ppw5jh",
+                            "html_id": "index-ies4ppw5jh",
+                            "key": "uVIS5ME0Gy"
+                        }
+                    ],
+                    "key": "Vd76pus8il"
+                },
+                {
+                    "type": "text",
+                    "value": " est encadrée, ce qui permet de voir sa\nportée. C’est l’auteur du document qui a préalablement spécifié les\npropriétés de chaque cellule.",
+                    "position": {
+                        "start": {
+                            "line": 29,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 29,
+                            "column": 1
+                        }
+                    },
+                    "key": "j6R76E7G1Y"
+                }
+            ],
+            "key": "bWuAV33yHp"
+        }
+    ],
+    "key": "IZ9MAsOi70"
+}

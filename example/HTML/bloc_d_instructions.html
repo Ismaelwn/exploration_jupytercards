@@ -5,85 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyST AST to HTML</title>
     <style>
-    /* === CSS pour les admonitions (version allégée) === */
+    /* === CSS pour les admonitions === */
     .admonition {
-        border-left: 3px solid #4a90e2;
-        padding: 6px 10px;
-        
-        border-radius: 6px;
-        background: #f3f6fa;
-        position: relative;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+        border-left: 4px solid #007ACC; /* Bordure bleue pour l'admonition */
+        padding: 10px 16px;
+        border-radius: 8px; /* Coins arrondis */
+        background: #f0f8ff; /* Fond clair */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+        margin-bottom: 20px; /* Espacement en bas */
     }
 
     .admonition-title {
-        font-weight: 600;
-        font-size: 1em;
-        margin-bottom: 4px;
-        display: flex;
-        align-items: center;
-        color: black !important;
-        }
-
-    .admonition-title::before {
-        content: "ℹ️";
-        font-size: 1em;
-        margin-right: 6px;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #007ACC; /* Couleur du titre */
+        margin-bottom: 12px;
     }
 
-    .admonition[data-type="warning"] {
-        border-left-color: #e67e22;
-        background: #fdf6e3;
-    }
-
-    .admonition[data-type="warning"] .admonition-title::before {
-        content: "⚠️";
-    }
-
-    .admonition[data-type="tip"] {
-        border-left-color: #27ae60;
-        background: #e8f5e9;
-    }
-
-    .admonition[data-type="tip"] .admonition-title::before {
-        content: "💡";
-    }
-
-    .admonition[data-type="error"] {
-        border-left-color: #c0392b;
-        background: #fdecea;
-    }
-
-    .admonition[data-type="error"] .admonition-title::before {
-        content: "❌";
-    }
-
-    /* === Grille et cartes === */
-    .grid {
-        display: flex;
-        gap: 6px;
-    }
-
-    .card {
-        border: 1px solid #ccc;
-        padding: 8px;
-        flex: 1;
-        border-radius: 6px;
-        background: #fff;
-    }
-
+    /* === Bloc de code === */
     pre {
-        background: #f5f5f5;
-        padding: 8px;
-        border-radius: 4px;
-        font-size: 0.9em;
+        background-color: #2d2d2d;  /* Fond sombre */
+        color: #f5f5f5;             /* Texte clair */
+        padding: 16px 20px;         /* Espacement autour du texte */
+        border-radius: 8px;         /* Coins arrondis */
+        font-size: 1em;             /* Taille de police confortable */
+        font-family: "Courier New", monospace;  /* Police monospace */
+        overflow-x: auto;           /* Barres de défilement horizontales */
+        word-wrap: break-word;      /* Séparation des mots longs */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);  /* Ombre légère */
     }
-</style>
 
+    /* Code en ligne */
+    code {
+        background-color: #2d2d2d;  /* Fond sombre pour le code en ligne */
+        color: #f5f5f5;             /* Texte clair */
+        padding: 4px 6px;           /* Espacement pour le code en ligne */
+        border-radius: 4px;         /* Coins arrondis */
+        font-size: 0.9em;           /* Taille de police plus petite */
+        font-family: "Courier New", monospace;  /* Police monospace */
+    }
+    </style>
 </head>
 <body>
     <div class="admonition" data-type="note">
-    <p class="admonition-title">        Bloc d’instructions</p>
+    <p class="admonition-title">        Définition : Bloc d’instructions</p>
     Un 
 
     bloc d'instructions
