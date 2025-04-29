@@ -1,0 +1,3 @@
+[submodule "example/example/jupytercards"]
+	path = example/example/jupytercards
+	url = https://github.com/Ismaelwn/JupyterCards
