@@ -1,7 +1,0 @@
-{
-    "type": "admonition",
-    "label": "fonction_informel",
-    "identifier": "fonction_informel",
-    "html_id": "fonction-informel",
-    "content": "Informellement, une   est un\npetit programme   avec : Dans notre example : le nom de la fonction, introduit par le mot clé   est\n . L’entrée se compose de deux paramètres   et  \n(des nombres réels). Le traitement est le calcul de l’expression  . La valeur renvoyée, indiquée par le mot clé  \nest la valeur de cette expression."
-}
