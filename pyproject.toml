@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exploration_jupytercards"
+version = "0.1.0"
+description = "Exploration et extraction de données pour JupyterCards"
+authors = [
+    { name = "Wane Ismael", email = "isma91sn@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[tool.setuptools]
+include-package-data = false
+packages = ["exploration_jupytercards"]
