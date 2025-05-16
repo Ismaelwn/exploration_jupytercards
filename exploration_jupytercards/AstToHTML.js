@@ -1,145 +1,145 @@
-import fs from 'node:fs/promises';
-import { readdir, readFile } from 'fs/promises';
-import path, { join } from 'node:path';
-import { existsSync, readFileSync } from 'fs';
-import { createHash } from 'crypto';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import fs from 'node:fs/promises'
+import { readdir } from 'fs/promises';
+import { join } from 'path';
 
-// Déterminer le dossier réel où se trouve ce script
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-// 🔧 Répertoires correctement relatifs au script
-const dossierCible = join(__dirname, '../JSON');
-const dossierSortie = join(__dirname, '../HTML');
-const dossierCache = join(__dirname, '../JSON_old');
-
-// 🔧 Création explicite des dossiers nécessaires
-await fs.mkdir(dossierSortie, { recursive: true });
-await fs.mkdir(dossierCache, { recursive: true });
-
-function hash(content) {
-    return createHash('sha256').update(content).digest('hex');
-}
-
-function fichierModifie(jsonPath, cachePath) {
-    if (!existsSync(cachePath)) return true;
-    const actuel = readFileSync(jsonPath, 'utf8');
-    const ancien = readFileSync(cachePath, 'utf8');
-    return hash(actuel) !== hash(ancien);
-}
-
+/**
+ * Convertit un AST MyST en HTML en prenant en compte le style et la hiérarchie.
+ * @param {Object} node - Un nœud de l'AST.
+ * @param {number} depth - Niveau de profondeur pour structurer l'affichage.
+ * @returns {string} - HTML généré.
+ */
 function convertNodeToHtml(node, depth = 0) {
-    if (!node) return "";
+    if (!node) return ""
 
-    const indent = " ".repeat(depth * 4);
-    const position = node.position
-        ? ` data-line="${node.position.start.line}" data-column="${node.position.start.column}"`
-        : "";
+    const indent = " ".repeat(depth * 4) // Indentation pour la hiérarchie
+    const position = node.position ? ` data-line="${node.position.start.line}" data-column="${node.position.start.column}"` : ""
 
     switch (node.type) {
         case "admonition": {
-            const type = node.kind || "note";
-            return `${indent}<div class="admonition" data-type="${type}"${position}>\n${node.children.map(child => convertNodeToHtml(child, depth + 1)).join("\n")}\n${indent}</div>`;
+            const type = node.kind || "note" // Type par défaut "note"
+            return `${indent}<div class="admonition" data-type="${type}"${position}>\n${node.children.map(child => convertNodeToHtml(child, depth + 1)).join("\n")}\n${indent}</div>`
         }
+
         case "admonitionTitle":
-            return `${indent}<p class="admonition-title"${position}>${node.children.map(child => convertNodeToHtml(child, depth + 1)).join("")}</p>`;
+            return `${indent}<p class="admonition-title"${position}>${node.children.map(child => convertNodeToHtml(child, depth + 1)).join("")}</p>`
+
         case "text":
-            return `${indent}${node.value}`;
+            return `${indent}${node.value}`
+
         case "grid":
-            return `${indent}<div class="grid"${position}>\n${node.children.map(child => convertNodeToHtml(child, depth + 1)).join("\n")}\n${indent}</div>`;
+            return `${indent}<div class="grid"${position}>\n${node.children.map(child => convertNodeToHtml(child, depth + 1)).join("\n")}\n${indent}</div>`
+
         case "card":
-            return `${indent}<div class="card"${position}>\n${node.children.map(child => convertNodeToHtml(child, depth + 1)).join("\n")}\n${indent}</div>`;
+            return `${indent}<div class="card"${position}>\n${node.children.map(child => convertNodeToHtml(child, depth + 1)).join("\n")}\n${indent}</div>`
+
         case "code":
-            return `${indent}<pre><code${position}>${node.value}</code></pre>`;
+            return `${indent}<pre><code${position}>${node.value}</code></pre>`
+
         case "image":
-            return `${indent}<img src="${node.url}" alt="Image"${position} style="height:${node.height}; text-align:${node.align};">`;
+            return `${indent}<img src="${node.url}" alt="Image"${position} style="height:${node.height}; text-align:${node.align};">`
+
         default:
-            return node.children
-                ? node.children.map(child => convertNodeToHtml(child, depth)).join("\n")
-                : "";
+            return node.children ? node.children.map(child => convertNodeToHtml(child, depth)).join("\n") : ""
     }
 }
 
 async function convertMySTAstToHTML(jsonFile, outputFile) {
     try {
-        const jsonData = await fs.readFile(jsonFile, 'utf8');
-        const ast = JSON.parse(jsonData);
-        const htmlContent = convertNodeToHtml(ast);
-        const fullHtml = `<!DOCTYPE html>
+            // Lire le fichier JSON
+            const jsonData = await fs.readFile(jsonFile, 'utf8')
+            const ast = JSON.parse(jsonData) // Parser l'AST
+    
+            // Convertir l'AST MyST en HTML avec hiérarchie et styles
+            const htmlContent = convertNodeToHtml(ast)
+    
+            // Ajouter une structure HTML de base et inclure le CSS MyST
+            const fullHtml = `<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyST AST to HTML</title>
     <style>
+    /* === CSS pour les admonitions === */
     .admonition {
-        border-left: 4px solid #007ACC;
+        border-left: 4px solid #007ACC; /* Bordure bleue pour l'admonition */
         padding: 10px 16px;
-        border-radius: 8px;
-        background: #f0f8ff;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
+        border-radius: 8px; /* Coins arrondis */
+        background: #f0f8ff; /* Fond clair */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+        margin-bottom: 20px; /* Espacement en bas */
     }
+
     .admonition-title {
         font-weight: bold;
         font-size: 1.2em;
-        color: #007ACC;
+        color: #007ACC; /* Couleur du titre */
         margin-bottom: 12px;
     }
+
+    /* === Bloc de code === */
     pre {
-        background-color: #2d2d2d;
-        color: #f5f5f5;
-        padding: 16px 20px;
-        border-radius: 8px;
-        font-size: 1em;
-        font-family: "Courier New", monospace;
-        overflow-x: auto;
-        word-wrap: break-word;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        background-color: #2d2d2d;  /* Fond sombre */
+        color: #f5f5f5;             /* Texte clair */
+        padding: 16px 20px;         /* Espacement autour du texte */
+        border-radius: 8px;         /* Coins arrondis */
+        font-size: 1em;             /* Taille de police confortable */
+        font-family: "Courier New", monospace;  /* Police monospace */
+        overflow-x: auto;           /* Barres de défilement horizontales */
+        word-wrap: break-word;      /* Séparation des mots longs */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);  /* Ombre légère */
     }
+
+    /* Code en ligne */
     code {
-        background-color: #2d2d2d;
-        color: #f5f5f5;
-        padding: 4px 6px;
-        border-radius: 4px;
-        font-size: 0.9em;
-        font-family: "Courier New", monospace;
+        background-color: #2d2d2d;  /* Fond sombre pour le code en ligne */
+        color: #f5f5f5;             /* Texte clair */
+        padding: 4px 6px;           /* Espacement pour le code en ligne */
+        border-radius: 4px;         /* Coins arrondis */
+        font-size: 0.9em;           /* Taille de police plus petite */
+        font-family: "Courier New", monospace;  /* Police monospace */
     }
     </style>
 </head>
 <body>
     ${htmlContent}
 </body>
-</html>`;
+</html>`
 
-        await fs.writeFile(outputFile, fullHtml, 'utf8');
-        console.log(`[✅] Conversion terminée : ${outputFile}`);
+        // Écrire le HTML dans le fichier de sortie
+        await fs.writeFile(outputFile, fullHtml, 'utf8')
+        console.log(`✅ Conversion terminée ! Fichier généré : ${outputFile}`)
     } catch (error) {
-        console.error("[ERREUR] Conversion échouée :", error);
+        console.error("❌ Erreur lors de la conversion :", error)
     }
 }
 
-// —————————————————————————————————————
-// Boucle principale sur les fichiers JSON
-// —————————————————————————————————————
+
+
+
+// Exemple d'utilisation pour convertir un fichier AST en HTML
+const dossierCible = join(process.cwd(), 'JSON');
+const dossierSortie = join(process.cwd(), 'HTML');
+
+// Création du répertoire de sortie s'il n'existe pas
+await fs.mkdir(dossierSortie, { recursive: true });
+
 try {
     const fichiers = await readdir(dossierCible);
-    for (const fichier of fichiers) {
-        if (fichier.endsWith('.json')) {
-            const cheminJson = join(dossierCible, fichier);
-            const cheminHtml = join(dossierSortie, fichier.replace(/\.json$/, '.html'));
-            const cheminCache = join(dossierCache, fichier);
+    
+    console.log("Fichiers récupérés :", fichiers);
 
-            if (fichierModifie(cheminJson, cheminCache)) {
-                console.log(`[→] Génération HTML : ${fichier}`);
-                await convertMySTAstToHTML(cheminJson, cheminHtml);
-            } else {
-                console.log(`[⏩] HTML inchangé : ${fichier}`);
-            }
+    for (let i = 0; i < fichiers.length; i++) {
+        if (fichiers[i].endsWith('.json')) {
+            console.log(`- ${fichiers[i]}`);
+            const cheminJson = join(dossierCible, fichiers[i]);
+            const cheminHtml = join(dossierSortie, `${fichiers[i].replace(/\.json$/, '')}.html`);
+
+            // Lancer la conversion
+            convertMySTAstToHTML(cheminJson, cheminHtml); 
         }
     }
+
 } catch (err) {
-    console.error("❌ Erreur lors de la lecture du dossier JSON :", err);
+    console.error("Erreur :", err);
 }

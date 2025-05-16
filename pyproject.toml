@@ -14,5 +14,8 @@ requires-python = ">=3.7"
 dependencies = []
 
 [tool.setuptools]
-include-package-data = false
 packages = ["exploration_jupytercards"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+exploration_jupytercards = ["*.js"]
