@@ -33,16 +33,6 @@ def convToDict(file_path): #censé etre une definition uniquement
    return {"front": extract_root_titles(file_path), "back": lire_fichier("HTML/"+file_path.removeprefix("JSON/").removesuffix(".json")+".html") , "topic" : "computerscience"}
 
 
-l = []
-dossier = os.listdir("JSON")
-for fichier in dossier:
-    if fichier.endswith(".json"):
-        dict_ = convToDict("JSON/"+fichier)
-        l.append(dict_)
-        print(f"--- {fichier} traité ---\n")
-
-file.writeInFile(l, "def_converted.json")
-
 
 
 
