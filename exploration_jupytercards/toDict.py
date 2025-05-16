@@ -1,7 +1,7 @@
 import json
-import extract
+from . import extract
 import os
-import file
+from . import file
 
 '''
 Code pour créer une liste de dictionnaires stockées format Json
