@@ -9,7 +9,7 @@ description = "Exploration et extraction de données pour JupyterCards"
 authors = [
     { name = "Wn Ismael", email = "isma91sn@gmail.com" }
 ]
-readme = "README.md"
+readme = "README.txt"
 requires-python = ">=3.7"
 dependencies = []
 
