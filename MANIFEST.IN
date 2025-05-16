@@ -1,6 +1,7 @@
 exclude *.log
 prune node_modules
 prune JSON
+prune JSON_old
 prune HTML
 prune example
 prune **/__pycache__
