@@ -6,10 +6,10 @@ import sys
 
 def toDict_tools(current_dir) :
     l = []
-    dossier = os.listdir("build_/JSON")
+    dossier = os.listdir(current_dir+"/build_/JSON")
     for fichier in dossier:
         if fichier.endswith(".json"):
-            dict_ = toDict.convToDict("build_/JSON/"+fichier)
+            dict_ = toDict.convToDict(current_dir+"/build_/JSON/"+fichier)
             l.append(dict_)
             print(f"--- {fichier} traité ---\n")
     
