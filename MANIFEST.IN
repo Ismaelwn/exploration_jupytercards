@@ -4,7 +4,8 @@ prune JSON
 prune JSON_old
 prune HTML
 prune example
-prune **/__pycache__
+prune **/__pycache__ 
 prune **/.ipynb_checkpoints
+prune **/exploration_jupytercards.egg-info
 exclude def_converted.json
 exclude .gitignore
