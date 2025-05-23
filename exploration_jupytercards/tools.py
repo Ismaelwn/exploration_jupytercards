@@ -28,7 +28,7 @@ def extract_tools(current_dir) :
     os.makedirs(current_dir+"/build_/", exist_ok=True)
     os.makedirs(current_dir+"/build_/JSON", exist_ok=True)
 
-    chemin = s.path.join(current_dir, "/build_/JSON")
+    chemin = os.path.join(current_dir, "/build_/JSON")
     
     file_counter = 0
     print(content_dir)
