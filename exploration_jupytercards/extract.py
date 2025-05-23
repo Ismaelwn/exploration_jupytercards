@@ -65,7 +65,7 @@ def extract_admonition_ast_from_file(file_path: str, file_counter: int):
                         if len(index_e) != 0 :
                             for index in index_e :
                                 titre_slug = re.sub(r"[^\w\-]+", "_", index.strip().lower())
-                                output_file = os.path.join("JSON", f"{titre_slug}.json")
+                                output_file = os.path.join("build_/JSON", f"{titre_slug}.json")
                                 print(f"Écriture : {output_file}")
                                 file.writeInFile(node, output_file)
                         else :
@@ -77,7 +77,7 @@ def extract_admonition_ast_from_file(file_path: str, file_counter: int):
                                     first_child["children"][0]["value"] = titre_slug
                             else :
                                     first_child["children"][0]["value"] = titre
-                                    output_file = os.path.join("JSON", f"{titre_slug}.json")
+                                    output_file = os.path.join("build_/JSON", f"{titre_slug}.json")
                                     file_counter += 1
                                     print(f"Écriture : {output_file}")
                                     file.writeInFile(node, output_file)

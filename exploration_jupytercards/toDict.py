@@ -29,8 +29,21 @@ def lire_fichier(chemin_fichier):
         print(f"Une erreur est survenue : {e}")
 
 
-def convToDict(file_path): #censé etre une definition uniquement
-   return {"front": extract_root_titles(file_path), "back": lire_fichier("HTML/"+file_path.removeprefix("JSON/").removesuffix(".json")+".html") , "topic" : "computerscience"}
+def convToDict(file_path, direct):
+    """
+    file_path : chemin du fichier .json (peut inclure 'build_/JSON/' ou non)
+    direct : dossier racine courant (ex: dossier du projet)
+    """
+    # On récupère le nom de base sans extension
+    base_name = os.path.basename(file_path).removesuffix('.json')
+    html_file_path = os.path.join(direct, "build_", "HTML", base_name + ".html")
+    print(base_name.replace("_"," ")),
+    return {
+        "front": base_name.replace("_"," "),
+        "back": lire_fichier(html_file_path),
+        "topic": "computerscience"
+    }
+
 
 
 
