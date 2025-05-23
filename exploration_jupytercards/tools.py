@@ -13,7 +13,7 @@ def toDict_tools(current_dir) :
             l.append(dict_)
             print(f"--- {fichier} traité ---\n")
     
-    file.writeInFile(l, current_dir+"build_/def_converted.json")
+    file.writeInFile(l, current_dir+"/build_/def_converted.json")
 
 def extract_tools(current_dir) :
     #  Argument positionnel : chemin du répertoire « content »
@@ -23,8 +23,8 @@ def extract_tools(current_dir) :
     if not os.path.isdir(content_dir):
         raise FileNotFoundError(f"Le répertoire '{content_dir}' est introuvable.")
     
-    os.makedirs(current_dir+"build_/", exist_ok=True)
-    os.makedirs(current_dir+"build_/JSON", exist_ok=True)
+    os.makedirs(current_dir+"/build_/", exist_ok=True)
+    os.makedirs(current_dir+"/build_/JSON", exist_ok=True)
     file_counter = 0
     for fichier in os.listdir(content_dir):
         if fichier.endswith(".json"):
