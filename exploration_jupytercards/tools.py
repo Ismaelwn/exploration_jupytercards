@@ -3,7 +3,7 @@ from exploration_jupytercards import toDict
 from exploration_jupytercards import file
 
 
-def extract_tools() :
+def toDict_tools() :
     l = []
     chemin_courant = os.getcwd()
     dossier = os.listdir("build_/JSON")
@@ -15,7 +15,7 @@ def extract_tools() :
     
     file.writeInFile(l, chemin_courant+"build_/def_converted.json")
 
-def toDict_tools() :
+def extract_tools() :
     l = []
     chemin_courant = os.getcwd()
     dossier = os.listdir("build_/JSON")
