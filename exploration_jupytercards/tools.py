@@ -4,9 +4,8 @@ from exploration_jupytercards import file
 from exploration_jupytercards import extract
 import sys
 
-def toDict_tools() :
+def toDict_tools(current_dir) :
     l = []
-    chemin_courant = os.getcwd()
     dossier = os.listdir("build_/JSON")
     for fichier in dossier:
         if fichier.endswith(".json"):
@@ -14,11 +13,11 @@ def toDict_tools() :
             l.append(dict_)
             print(f"--- {fichier} traité ---\n")
     
-    file.writeInFile(l, chemin_courant+"build_/def_converted.json")
+    file.writeInFile(l, current_dir+"build_/def_converted.json")
 
-def extract_tools() :
+def extract_tools(current_dir) :
     #  Argument positionnel : chemin du répertoire « content »
-    current_dir = os.getcwd()
+    #current_dir = os.getcwd()
     content_dir = sys.argv[1]
     #content_par = os.path.dirname(content_dir)
     if not os.path.isdir(content_dir):
