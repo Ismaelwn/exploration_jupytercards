@@ -5,7 +5,6 @@ import sys
 from . import file
 
 
-
 def extract_content_from_dict(d: dict):
     """Récupère la partie pertinente du JSON."""
     if "mdast" in d:

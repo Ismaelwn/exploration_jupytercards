@@ -118,8 +118,8 @@ async function convertMySTAstToHTML(jsonFile, outputFile) {
 
 
 // Exemple d'utilisation pour convertir un fichier AST en HTML
-const dossierCible = join(process.cwd(), 'JSON');
-const dossierSortie = join(process.cwd(), 'HTML');
+const dossierCible = join(process.cwd(), 'build_/JSON');
+const dossierSortie = join(process.cwd(), 'build_/HTML');
 
 // Création du répertoire de sortie s'il n'existe pas
 await fs.mkdir(dossierSortie, { recursive: true });
