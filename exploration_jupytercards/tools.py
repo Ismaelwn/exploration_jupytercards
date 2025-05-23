@@ -7,12 +7,14 @@ import sys
 def toDict_tools(current_dir) :
     l = []
     dossier = os.listdir(current_dir+"/build_/JSON")
+    print(dossier +" 3")
     for fichier in dossier:
         if fichier.endswith(".json"):
             dict_ = toDict.convToDict(current_dir+"/build_/JSON/"+fichier)
+            print(dict_ +" 4")
             l.append(dict_)
             print(f"--- {fichier} traité ---\n")
-    
+    print(current_dir+"/build_/def_converted.json" +" 4")
     file.writeInFile(l, current_dir+"/build_/def_converted.json")
 
 def extract_tools(current_dir) :
@@ -26,6 +28,7 @@ def extract_tools(current_dir) :
     os.makedirs(current_dir+"/build_/", exist_ok=True)
     os.makedirs(current_dir+"/build_/JSON", exist_ok=True)
     file_counter = 0
+    print(content_dir)
     for fichier in os.listdir(content_dir):
         if fichier.endswith(".json"):
             chemin = os.path.join(content_dir, fichier)
