@@ -27,11 +27,14 @@ def extract_tools(current_dir) :
     
     os.makedirs(current_dir+"/build_/", exist_ok=True)
     os.makedirs(current_dir+"/build_/JSON", exist_ok=True)
+
+    chemin = s.path.join(current_dir, "/build_/JSON")
+    
     file_counter = 0
     print(content_dir)
     for fichier in os.listdir(content_dir):
         if fichier.endswith(".json"):
-            chemin = os.path.join(content_dir, fichier)
+            chemin = os.path.join(chemin, fichier)
             extract.extract_admonition_ast_from_file(chemin, file_counter)
             file_counter+=1
             print(file_counter)
