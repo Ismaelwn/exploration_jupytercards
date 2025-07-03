@@ -36,7 +36,7 @@ def convToDict(file_path, direct):
     """
     # On récupère le nom de base sans extension
     base_name = os.path.basename(file_path).removesuffix('.json')
-    html_file_path = os.path.join(direct, "build_", "HTML", base_name + ".html")
+    html_file_path = os.path.join(direct, "_build", "HTML", base_name + ".html")
     print(base_name.replace("_"," ")),
     return {
         "front": base_name.replace("_"," "),

@@ -65,19 +65,20 @@ def extract_admonition_ast_from_file(file_path: str, file_counter: int):
                         if len(index_e) != 0 :
                             for index in index_e :
                                 titre_slug = re.sub(r"[^\w\-]+", "_", index.strip().lower())
-                                output_file = os.path.join("build_/JSON", f"{titre_slug}.json")
+                                output_file = os.path.join("_build/JSON", f"{titre_slug}.json").rstrip("_")
+                                
                                 print(f"Écriture : {output_file}")
                                 file.writeInFile(node, output_file)
                         else :
                             print("pas de titre, actions par defaut")
                             titre = re.sub(r"^\s*Définition\s*[:：]\s*", "", value)
-                            titre_slug = re.sub(r"[^\w\-]+", "_", titre.strip().lower())
+                            titre_slug = re.sub(r"[^\w\-]+", "_", titre.strip().lower().rstrip("_"))
                             if not titre_slug:
                                     titre_slug ="Définition "+str(file_counter)
-                                    first_child["children"][0]["value"] = titre_slug
+                                    first_child["children"][0]["value"] = titre_slug.rstrip("_")
                             else :
                                     first_child["children"][0]["value"] = titre
-                                    output_file = os.path.join("build_/JSON", f"{titre_slug}.json")
+                                    output_file = os.path.join("_build/JSON", f"{titre_slug.rstrip("_")}.json")
                                     file_counter += 1
                                     print(f"Écriture : {output_file}")
                                     file.writeInFile(node, output_file)

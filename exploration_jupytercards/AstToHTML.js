@@ -52,16 +52,14 @@ async function convertMySTAstToHTML(jsonFile, outputFile) {
     
             // Convertir l'AST MyST en HTML avec hiérarchie et styles
             const htmlContent = convertNodeToHtml(ast)
-    
+            const nameCard = jsonFile.replace(/\.json$/, '').split(/[/\\]/).pop();
             // Ajouter une structure HTML de base et inclure le CSS MyST
-            const fullHtml = `<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyST AST to HTML</title>
+           
+            const fullHtml = 
+    `
+    <a id= "flashcard_<${nameCard}>-search"></a>
+    
     <style>
-    /* === CSS pour les admonitions === */
     .admonition {
         border-left: 4px solid #007ACC; /* Bordure bleue pour l'admonition */
         padding: 10px 16px;
@@ -78,7 +76,6 @@ async function convertMySTAstToHTML(jsonFile, outputFile) {
         margin-bottom: 12px;
     }
 
-    /* === Bloc de code === */
     pre {
         background-color: #2d2d2d;  /* Fond sombre */
         color: #f5f5f5;             /* Texte clair */
@@ -101,17 +98,17 @@ async function convertMySTAstToHTML(jsonFile, outputFile) {
         font-family: "Courier New", monospace;  /* Police monospace */
     }
     </style>
-</head>
-<body>
+
+
     ${htmlContent}
-</body>
-</html>`
+
+`;
 
         // Écrire le HTML dans le fichier de sortie
         await fs.writeFile(outputFile, fullHtml, 'utf8')
-        console.log(`✅ Conversion terminée ! Fichier généré : ${outputFile}`)
+        console.log(`Conversion terminée ! Fichier généré : ${outputFile}`)
     } catch (error) {
-        console.error("❌ Erreur lors de la conversion :", error)
+        console.error("Erreur lors de la conversion :", error)
     }
 }
 
@@ -119,17 +116,14 @@ async function convertMySTAstToHTML(jsonFile, outputFile) {
 
 
 // Exemple d'utilisation pour convertir un fichier AST en HTML
-const dossierCible = join(process.cwd(), 'build_/JSON');
-const dossierSortie = join(process.cwd(), 'build_/HTML');
+const dossierCible = join(process.cwd(), '_build/JSON');
+const dossierSortie = join(process.cwd(), '_build/HTML');
 
 // Création du répertoire de sortie s'il n'existe pas
 await fs.mkdir(dossierSortie, { recursive: true });
 
 try {
     const fichiers = await readdir(dossierCible);
-    
-    console.log("Fichiers récupérés :", fichiers);
-
     for (let i = 0; i < fichiers.length; i++) {
         if (fichiers[i].endsWith('.json')) {
             console.log(`- ${fichiers[i]}`);
