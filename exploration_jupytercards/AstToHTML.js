@@ -8,6 +8,7 @@ import { join } from 'path';
  * @param {number} depth - Niveau de profondeur pour structurer l'affichage.
  * @returns {string} - HTML généré.
  */
+
 function convertNodeToHtml(node, depth = 0) {
     if (!node) return ""
 

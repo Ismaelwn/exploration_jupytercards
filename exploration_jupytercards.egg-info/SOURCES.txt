@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.txt
+pyproject.toml
+exploration_jupytercards/AstToHTML.js
+exploration_jupytercards/MystToAST.js
+exploration_jupytercards/__init__.py
+exploration_jupytercards/extract.py
+exploration_jupytercards/file.py
+exploration_jupytercards/toAstJson.py
+exploration_jupytercards/toDict.py
+exploration_jupytercards/tools.py
+exploration_jupytercards.egg-info/PKG-INFO
+exploration_jupytercards.egg-info/SOURCES.txt
+exploration_jupytercards.egg-info/dependency_links.txt
+exploration_jupytercards.egg-info/top_level.txt
