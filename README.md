@@ -7,20 +7,6 @@ A lightweight Python library that **scans Markdown (.md) and JSON course files, 
 
 > **Context** – The project was developed during a research internship to streamline the creation of interactive teaching material. By automating the extraction of key concepts, instructors can focus on pedagogy while learners benefit from ready‑to‑use flashcards inside notebooks and Jupyter Book.
 
----
-
-## Key Features
-
-| Feature                         | Description                                                                                      |
-| ------------------------------- | ------------------------------------------------------------------------------------------------ |
-| **Automatic definition mining** | Detects definition blocks in Markdown headers or specially‑tagged JSON structures.               |
-| **One‑command conversion**      | CLI and Python API turn raw course content into the JSON schema expected by *JupyterCards*.      |
-| **Randomised shuffling**        | Optional random order generation to maximise recall practice.                                    |
-| **Topic filtering**             | Tag cards by topic to assemble custom decks on demand.                                           |
-| **Jupyter‑native**              | Results can be displayed instantly in notebooks with `display_flashcards()` from *JupyterCards*. |
-| **Fully open‑source**           | MIT‑licensed and extensible – fork it, adapt it, contribute!                                     |
-
----
 
 ## Quick Start
 
